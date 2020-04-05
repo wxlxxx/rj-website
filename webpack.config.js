@@ -3,6 +3,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const fs = require('fs');
+const CopyPlugin = require('copy-webpack-plugin');
+const webpack = require('webpack')
 
 function generateHtmlPlugins (templateDir) {
   // Read files in template directory
@@ -14,26 +16,27 @@ function generateHtmlPlugins (templateDir) {
     const extension = parts[1]
     // Create new HTMLWebpackPlugin with options
     return new HtmlWebpackPlugin({
-      filename: `../html/${name}.html`,
+      filename: `${name}.html`,
       template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`),
       minify: false
     })
   })
 }
-const htmlPlugins = generateHtmlPlugins('./html')
+const htmlPlugins = generateHtmlPlugins('./src/html/page')
 
 const devConfig = {
   entry: {
-    app: './src/index.js'
+    app: './src/script/main.js'
   },
   devtool: 'inline-source-map',
   devServer: {
-    contentBase: './dist',
+    contentBase: path.join(__dirname, './dist'),
+    port: 8080
   },
   output: {
-    filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist/assets'),
-    publicPath: '/',
+    filename: 'assets/[name].bundle.js',
+    path: path.resolve(__dirname, './dist'),
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -62,20 +65,24 @@ const devConfig = {
       }
     ]
   },
-  plugins: [].concat(htmlPlugins)
+  plugins: [
+    new CopyPlugin([
+      { from: path.resolve(__dirname, './public'), to: path.resolve(__dirname, './dist') }
+    ]),
+    new webpack.DefinePlugin({
+      'process.env.PUBLIC_PATH': JSON.stringify('')
+    })
+  ].concat(htmlPlugins)
 }
 
 const prodConfig = {
   entry: {
-    app: './src/index.js'
-  },
-  devServer: {
-    contentBase: './dist',
+    app: './src/script/main.js'
   },
   output: {
-    filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist/assets'),
-    publicPath: '/',
+    filename: 'assets/[name].bundle.js',
+    path: path.resolve(__dirname, './dist'),
+    publicPath: './',
   },
   module: {
     rules: [
@@ -93,6 +100,15 @@ const prodConfig = {
           },
           // Translates CSS into CommonJS
           'css-loader',
+          // postcss
+          {
+            loader: "postcss-loader",
+            options: {
+              plugins: () => [require('autoprefixer')({
+                  'browsers': ['> 1%', 'last 2 versions']
+              })]
+            }
+          },
           // Compiles Sass to CSS
           'sass-loader',
         ],
@@ -113,10 +129,16 @@ const prodConfig = {
   },
   plugins: [
     new CleanWebpackPlugin(),
+    new CopyPlugin([
+      { from: path.resolve(__dirname, './public'), to: path.resolve(__dirname, './dist') }
+    ]),
     new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[id].css',
+      filename: 'assets/[name].css',
+      chunkFilename: 'assets/[id].css',
     }),
+    new webpack.DefinePlugin({
+      'process.env.PUBLIC_PATH': JSON.stringify('')
+    })
   ].concat(htmlPlugins)
 }
 
