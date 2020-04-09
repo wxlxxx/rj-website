@@ -1,3 +1,4 @@
+$primary: #2A2A2A;
 $secondary: #1468FF;
 $border-radius: 0;
 $border-radius-lg: 0;
@@ -30,12 +31,17 @@ $input-btn-padding-x: 4rem;
   list-style: none;
   display: flex;
   justify-content: center;
+  padding-left: 0;
+  margin: 0;
   button {
     font-size: 0;
     border: 1px solid #D8D8D8;
-    width: 48px;
+    width: 24px;
     margin: 0 8px;
     padding: 0;
+    @media(min-width: 992px){
+      width: 48px;
+    }
   }
   .slick-active button {
     border: 2px solid #1468FF;
@@ -54,6 +60,34 @@ $gray: #828282 !default;
     max-width: 1470px;
   }
 }
+.bg-gray {
+  background-color: #F7F7F7;
+}
+.text-gray {
+  color: #9C9C9C;
+}
+.transition {
+  transition: all 0.2s;
+}
+.hover-box-shadow {
+  &:hover {
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.04);
+  }
+}
+.hover-unstyled {
+  &:hover {
+    text-decoration: none;
+  }
+}
+.background-image-cover {
+  background-position: center;
+  background-size: auto 100%;
+  transition: all 0.4s;
+  &:hover {
+    background-size: auto 120%;
+  }
+}
+
 .navbar {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
   background-color: #fff;
@@ -96,7 +130,7 @@ $gray: #828282 !default;
     position: absolute;
     left: 0;
     top: 0;
-    background-color: #2A2A2A;
+    background-color: $primary;
     width: 66%;
     height: 100vh;
     padding-top: $navbar-brand-height-mobile;
@@ -240,6 +274,33 @@ $gray: #828282 !default;
           }
         }
       }
+    }
+  }
+}
+#case-nav-tab {
+  border: none;
+  .nav-link {
+    min-width: 125px;
+    border: none;
+    border-right: 1px solid #D8D8D8;
+    padding: 0 30px;
+    margin: 10px 0;
+    @media(min-width: 992px){
+      min-width: 0;
+    }
+    &.active {
+      border: none;
+      border-right: 1px solid #D8D8D8;
+      background-color: inherit;
+      color: $secondary;
+      span {
+          border-bottom: solid 2px $secondary;
+          padding: 6px 0;
+      }
+    }
+    &:last-child {
+      border: none;
+      padding-right: 0;
     }
   }
 }

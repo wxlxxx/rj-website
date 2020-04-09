@@ -7,7 +7,7 @@
   </head>
   <body>
     <%= require('html-loader!../common/header.html') %>
-    <div class="">
+    <div class="bg-gray">
       <div id="slick-home-banner">
         <div class="py-5" style="background-image: url(<% process.env.PUBLIC_PATH %>/images/home-banner-1.png);background-position: center;background-size: cover;height: 854px;max-height: 90vh;">
           <div class="container h-100">
@@ -55,6 +55,772 @@
         </div>
       </div>
     </div>
+    <div class="py-5 bg-gray">
+      <div class="container py-lg-4">
+        <h4>业务领域</h4>
+        <p class="text-gray">Service Area</p>
+        <hr/>
+        <div id="slick-home-service" class="text-center">
+          <div class="px-2 py-3">
+            <a href="" class="d-block bg-white px-lg-4 py-lg-5 p-3 hover-box-shadow transition hover-unstyled">
+              <div style="min-height: 120px;">
+                <img class="mx-auto" src="<% process.env.PUBLIC_PATH %>/icon/home-icon-1.svg" alt="">
+              </div>
+              <p>建筑装修装饰工程专业承包壹级</p>
+              <div class="mx-auto mb-2 border-top border-primary" style="width:24px;"></div>
+              <p class="font-size-small">architectural ornament</p>
+            </a>
+          </div>
+          <div class="px-2 py-3">
+            <a href="" class="d-block bg-white px-lg-4 py-lg-5 p-3 hover-box-shadow transition hover-unstyled">
+              <div style="min-height: 120px;">
+                <img class="mx-auto" src="<% process.env.PUBLIC_PATH %>/icon/home-icon-2.svg" alt="">
+              </div>
+              <p>建筑装饰工程设计专项甲级</p>
+              <div class="mx-auto mb-2 border-top border-primary" style="width:24px;"></div>
+              <p class="font-size-small">architectural ornament</p>
+            </a>
+          </div>
+          <div class="px-2 py-3">
+            <a href="" class="d-block bg-white px-lg-4 py-lg-5 p-3 hover-box-shadow transition hover-unstyled">
+              <div style="min-height: 120px;">
+                <img class="mx-auto" src="<% process.env.PUBLIC_PATH %>/icon/home-icon-3.svg" alt="">
+              </div>
+              <p>钢结构工程专业承包壹级</p>
+              <div class="mx-auto mb-2 border-top border-primary" style="width:24px;"></div>
+              <p class="font-size-small">architectural ornament</p>
+            </a>
+          </div>
+          <div class="px-2 py-3">
+            <a href="" class="d-block bg-white px-lg-4 py-lg-5 p-3 hover-box-shadow transition hover-unstyled">
+              <div style="min-height: 120px;">
+                <img class="mx-auto" src="<% process.env.PUBLIC_PATH %>/icon/home-icon-4.svg" alt="">
+              </div>
+              <p>市政展陈工程设计与施工一体化壹级</p>
+              <div class="mx-auto mb-2 border-top border-primary" style="width:24px;"></div>
+              <p class="font-size-small">architectural ornament</p>
+            </a>
+          </div>
+          <div class="px-2 py-3">
+            <a href="" class="d-block bg-white px-lg-4 py-lg-5 p-3 hover-box-shadow transition hover-unstyled">
+              <div style="min-height: 120px;">
+                <img class="mx-auto" src="<% process.env.PUBLIC_PATH %>/icon/home-icon-4.svg" alt="">
+              </div>
+              <p>市政展陈工程设计与施工一体化壹级</p>
+              <div class="mx-auto mb-2 border-top border-primary" style="width:24px;"></div>
+              <p class="font-size-small">architectural ornament</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-5">
+      <div class="container py-lg-4">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="flex-auto">
+            <h4>项目案例</h4>
+            <p class="text-gray mb-0">architectural ornament</p>
+          </div>
+          <nav>
+            <div class="nav nav-tabs" id="case-nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="case-nav-1-tab" data-toggle="tab" href="#case-nav-1" role="tab" aria-controls="case-nav-1" aria-selected="true"><span>全部</span></a>
+              <a class="nav-item nav-link" id="case-nav-2-tab" data-toggle="tab" href="#case-nav-2" role="tab" aria-controls="case-nav-2" aria-selected="false"><span>酒店会所</span></a>
+              <a class="nav-item nav-link" id="case-nav-3-tab" data-toggle="tab" href="#case-nav-3" role="tab" aria-controls="case-nav-3" aria-selected="false"><span>精装住宅</span></a>
+              <a class="nav-item nav-link" id="case-nav-4-tab" data-toggle="tab" href="#case-nav-4" role="tab" aria-controls="case-nav-4" aria-selected="false"><span>商业餐饮</span></a>
+              <a class="nav-item nav-link" id="case-nav-5-tab" data-toggle="tab" href="#case-nav-5" role="tab" aria-controls="case-nav-5" aria-selected="false"><span>文教医疗</span></a>
+              <a class="nav-item nav-link" id="case-nav-6-tab" data-toggle="tab" href="#case-nav-6" role="tab" aria-controls="case-nav-6" aria-selected="false"><span>商务办公</span></a>
+              <a class="nav-item nav-link" id="case-nav-7-tab" data-toggle="tab" href="#case-nav-7" role="tab" aria-controls="case-nav-7" aria-selected="false"><span>轨道交通</span></a>
+              <a class="nav-item nav-link" id="case-nav-8-tab" data-toggle="tab" href="#case-nav-8" role="tab" aria-controls="case-nav-8" aria-selected="false"><span>幕墙精品</span></a>
+              <a class="nav-item nav-link" id="case-nav-9-tab" data-toggle="tab" href="#case-nav-9" role="tab" aria-controls="case-nav-9" aria-selected="false"><span>园林绿化</span></a>
+              <a class="nav-item nav-link" id="case-nav-10-tab" data-toggle="tab" href="#case-nav-10" role="tab" aria-controls="case-nav-10" aria-selected="false"><span>设计案例</span></a>
+            </div>
+          </nav>
+        </div>
+        <hr/>
+        <div class="tab-content py-3" id="case-nav-tabContent">
+          <div class="tab-pane fade show active" id="case-nav-1" role="tabpanel" aria-labelledby="case-nav-1-tab">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-1.png);"></div>
+                  <p class="font-size-large mb-0">艺廊及商店改造 / DO.DO.</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-2.png);"></div>
+                  <p class="font-size-large mb-0">以色列立方别墅/ Ella Sahar</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">住宅空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-3.png);"></div>
+                  <p class="font-size-large mb-0">NA 住宅 / Architect Oshir Asaban</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">其他</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-4.png);"></div>
+                  <p class="font-size-large mb-0">秘密花园住宅 / Wallflower Architecture</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-5.png);"></div>
+                  <p class="font-size-large mb-0">艺廊及商店改造 / DO.DO.</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-6.png);"></div>
+                  <p class="font-size-large mb-0">以色列立方别墅/ Ella Sahar</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">住宅空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-7.png);"></div>
+                  <p class="font-size-large mb-0">NA 住宅 / Architect Oshir Asaban</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">其他</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-8.png);"></div>
+                  <p class="font-size-large mb-0">秘密花园住宅 / Wallflower Architecture</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="case-nav-2" role="tabpanel" aria-labelledby="case-nav-2-tab">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-1.png);"></div>
+                  <p class="font-size-large mb-0">艺廊及商店改造 / DO.DO.</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-2.png);"></div>
+                  <p class="font-size-large mb-0">以色列立方别墅/ Ella Sahar</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">住宅空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-3.png);"></div>
+                  <p class="font-size-large mb-0">NA 住宅 / Architect Oshir Asaban</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">其他</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-4.png);"></div>
+                  <p class="font-size-large mb-0">秘密花园住宅 / Wallflower Architecture</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-5.png);"></div>
+                  <p class="font-size-large mb-0">艺廊及商店改造 / DO.DO.</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-6.png);"></div>
+                  <p class="font-size-large mb-0">以色列立方别墅/ Ella Sahar</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">住宅空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-7.png);"></div>
+                  <p class="font-size-large mb-0">NA 住宅 / Architect Oshir Asaban</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">其他</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-8.png);"></div>
+                  <p class="font-size-large mb-0">秘密花园住宅 / Wallflower Architecture</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="case-nav-3" role="tabpanel" aria-labelledby="case-nav-3-tab">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-1.png);"></div>
+                  <p class="font-size-large mb-0">艺廊及商店改造 / DO.DO.</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-2.png);"></div>
+                  <p class="font-size-large mb-0">以色列立方别墅/ Ella Sahar</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">住宅空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-3.png);"></div>
+                  <p class="font-size-large mb-0">NA 住宅 / Architect Oshir Asaban</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">其他</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-4.png);"></div>
+                  <p class="font-size-large mb-0">秘密花园住宅 / Wallflower Architecture</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-5.png);"></div>
+                  <p class="font-size-large mb-0">艺廊及商店改造 / DO.DO.</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-6.png);"></div>
+                  <p class="font-size-large mb-0">以色列立方别墅/ Ella Sahar</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">住宅空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-7.png);"></div>
+                  <p class="font-size-large mb-0">NA 住宅 / Architect Oshir Asaban</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">其他</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-8.png);"></div>
+                  <p class="font-size-large mb-0">秘密花园住宅 / Wallflower Architecture</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="case-nav-4" role="tabpanel" aria-labelledby="case-nav-4-tab">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-1.png);"></div>
+                  <p class="font-size-large mb-0">艺廊及商店改造 / DO.DO.</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-2.png);"></div>
+                  <p class="font-size-large mb-0">以色列立方别墅/ Ella Sahar</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">住宅空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-3.png);"></div>
+                  <p class="font-size-large mb-0">NA 住宅 / Architect Oshir Asaban</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">其他</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-4.png);"></div>
+                  <p class="font-size-large mb-0">秘密花园住宅 / Wallflower Architecture</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-5.png);"></div>
+                  <p class="font-size-large mb-0">艺廊及商店改造 / DO.DO.</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-6.png);"></div>
+                  <p class="font-size-large mb-0">以色列立方别墅/ Ella Sahar</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">住宅空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-7.png);"></div>
+                  <p class="font-size-large mb-0">NA 住宅 / Architect Oshir Asaban</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">其他</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-8.png);"></div>
+                  <p class="font-size-large mb-0">秘密花园住宅 / Wallflower Architecture</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="case-nav-5" role="tabpanel" aria-labelledby="case-nav-5-tab">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-1.png);"></div>
+                  <p class="font-size-large mb-0">艺廊及商店改造 / DO.DO.</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-2.png);"></div>
+                  <p class="font-size-large mb-0">以色列立方别墅/ Ella Sahar</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">住宅空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-3.png);"></div>
+                  <p class="font-size-large mb-0">NA 住宅 / Architect Oshir Asaban</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">其他</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-4.png);"></div>
+                  <p class="font-size-large mb-0">秘密花园住宅 / Wallflower Architecture</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-5.png);"></div>
+                  <p class="font-size-large mb-0">艺廊及商店改造 / DO.DO.</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-6.png);"></div>
+                  <p class="font-size-large mb-0">以色列立方别墅/ Ella Sahar</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">住宅空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-7.png);"></div>
+                  <p class="font-size-large mb-0">NA 住宅 / Architect Oshir Asaban</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">其他</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-8.png);"></div>
+                  <p class="font-size-large mb-0">秘密花园住宅 / Wallflower Architecture</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="case-nav-6" role="tabpanel" aria-labelledby="case-nav-6-tab">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-1.png);"></div>
+                  <p class="font-size-large mb-0">艺廊及商店改造 / DO.DO.</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-2.png);"></div>
+                  <p class="font-size-large mb-0">以色列立方别墅/ Ella Sahar</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">住宅空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-3.png);"></div>
+                  <p class="font-size-large mb-0">NA 住宅 / Architect Oshir Asaban</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">其他</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-4.png);"></div>
+                  <p class="font-size-large mb-0">秘密花园住宅 / Wallflower Architecture</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-5.png);"></div>
+                  <p class="font-size-large mb-0">艺廊及商店改造 / DO.DO.</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-6.png);"></div>
+                  <p class="font-size-large mb-0">以色列立方别墅/ Ella Sahar</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">住宅空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-7.png);"></div>
+                  <p class="font-size-large mb-0">NA 住宅 / Architect Oshir Asaban</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">其他</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-8.png);"></div>
+                  <p class="font-size-large mb-0">秘密花园住宅 / Wallflower Architecture</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="case-nav-7" role="tabpanel" aria-labelledby="case-nav-7-tab">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-1.png);"></div>
+                  <p class="font-size-large mb-0">艺廊及商店改造 / DO.DO.</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-2.png);"></div>
+                  <p class="font-size-large mb-0">以色列立方别墅/ Ella Sahar</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">住宅空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-3.png);"></div>
+                  <p class="font-size-large mb-0">NA 住宅 / Architect Oshir Asaban</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">其他</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-4.png);"></div>
+                  <p class="font-size-large mb-0">秘密花园住宅 / Wallflower Architecture</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-5.png);"></div>
+                  <p class="font-size-large mb-0">艺廊及商店改造 / DO.DO.</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-6.png);"></div>
+                  <p class="font-size-large mb-0">以色列立方别墅/ Ella Sahar</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">住宅空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-7.png);"></div>
+                  <p class="font-size-large mb-0">NA 住宅 / Architect Oshir Asaban</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">其他</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-8.png);"></div>
+                  <p class="font-size-large mb-0">秘密花园住宅 / Wallflower Architecture</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="case-nav-8" role="tabpanel" aria-labelledby="case-nav-8-tab">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-1.png);"></div>
+                  <p class="font-size-large mb-0">艺廊及商店改造 / DO.DO.</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-2.png);"></div>
+                  <p class="font-size-large mb-0">以色列立方别墅/ Ella Sahar</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">住宅空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-3.png);"></div>
+                  <p class="font-size-large mb-0">NA 住宅 / Architect Oshir Asaban</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">其他</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-4.png);"></div>
+                  <p class="font-size-large mb-0">秘密花园住宅 / Wallflower Architecture</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-5.png);"></div>
+                  <p class="font-size-large mb-0">艺廊及商店改造 / DO.DO.</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-6.png);"></div>
+                  <p class="font-size-large mb-0">以色列立方别墅/ Ella Sahar</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">住宅空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-7.png);"></div>
+                  <p class="font-size-large mb-0">NA 住宅 / Architect Oshir Asaban</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">其他</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-8.png);"></div>
+                  <p class="font-size-large mb-0">秘密花园住宅 / Wallflower Architecture</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="case-nav-9" role="tabpanel" aria-labelledby="case-nav-9-tab">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-1.png);"></div>
+                  <p class="font-size-large mb-0">艺廊及商店改造 / DO.DO.</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-2.png);"></div>
+                  <p class="font-size-large mb-0">以色列立方别墅/ Ella Sahar</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">住宅空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-3.png);"></div>
+                  <p class="font-size-large mb-0">NA 住宅 / Architect Oshir Asaban</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">其他</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-4.png);"></div>
+                  <p class="font-size-large mb-0">秘密花园住宅 / Wallflower Architecture</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-5.png);"></div>
+                  <p class="font-size-large mb-0">艺廊及商店改造 / DO.DO.</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-6.png);"></div>
+                  <p class="font-size-large mb-0">以色列立方别墅/ Ella Sahar</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">住宅空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-7.png);"></div>
+                  <p class="font-size-large mb-0">NA 住宅 / Architect Oshir Asaban</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">其他</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-8.png);"></div>
+                  <p class="font-size-large mb-0">秘密花园住宅 / Wallflower Architecture</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="case-nav-10" role="tabpanel" aria-labelledby="case-nav-10-tab">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-1.png);"></div>
+                  <p class="font-size-large mb-0">艺廊及商店改造 / DO.DO.</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-2.png);"></div>
+                  <p class="font-size-large mb-0">以色列立方别墅/ Ella Sahar</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">住宅空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-3.png);"></div>
+                  <p class="font-size-large mb-0">NA 住宅 / Architect Oshir Asaban</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">其他</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-4.png);"></div>
+                  <p class="font-size-large mb-0">秘密花园住宅 / Wallflower Architecture</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-5.png);"></div>
+                  <p class="font-size-large mb-0">艺廊及商店改造 / DO.DO.</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-6.png);"></div>
+                  <p class="font-size-large mb-0">以色列立方别墅/ Ella Sahar</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">住宅空间设计</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-7.png);"></div>
+                  <p class="font-size-large mb-0">NA 住宅 / Architect Oshir Asaban</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">其他</p>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-6 py-3">
+                <a href="#" class="hover-unstyled">
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-8.png);"></div>
+                  <p class="font-size-large mb-0">秘密花园住宅 / Wallflower Architecture</p>
+                  <hr class="border-primary ml-0" style="width:20px;" />
+                  <p class="text-gray font-size-small">办公空间设计</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
 
@@ -62,6 +828,24 @@
   $('#slick-home-banner').slick({
     prevArrow: '<button type="button" class="slick-prev"><img src="<% process.env.PUBLIC_PATH %>/icon/slick-left.svg"/></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="<% process.env.PUBLIC_PATH %>/icon/slick-right.svg"/></button>',
-    dots: true
+    dots: true,
+    autoplay: true,
+    fade: true
+  })
+  $('#slick-home-service').slick({
+    prevArrow: '<button type="button" class="slick-prev" style="background:url(<% process.env.PUBLIC_PATH %>/icon/arrows.svg) 0 center no-repeat;left:-1%;"></button>',
+    nextArrow: '<button type="button" class="slick-next" style="background:url(<% process.env.PUBLIC_PATH %>/icon/arrows.svg) -1846px center no-repeat;right:-1%;"></button>',
+    autoplay: true,
+    slidesToShow: 4,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          dots: true,
+          arrows: false,
+          slidesToShow: 1
+        }
+      }
+    ]
   })
 </script>
