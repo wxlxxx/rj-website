@@ -8,8 +8,8 @@
   <body>
     <%= require('html-loader!../common/header.html') %>
     <section class="bg-gray">
-      <div id="slick-home-banner">
-        <div class="py-5" style="background-image: url(<% process.env.PUBLIC_PATH %>/images/home-banner-1.png);background-position: center;background-size: cover;height: 854px;max-height: 80vh;">
+      <div id="slick-case-banner">
+        <div class="py-5" style="background-image: url(<% process.env.PUBLIC_PATH %>/images/case-banner-1.png);background-position: center;background-size: cover;height: 854px;max-height: 80vh;">
           <div class="container h-100">
             <div class="row no-gutters h-100 align-items-center text-uppercase text-white">
               <div class="col-lg-5">
@@ -22,16 +22,10 @@
                   <a href="#" class="btn btn-secondary">了解更多</a>
                 </div>
               </div>
-              <div class="col-lg-2 d-none d-lg-block">
-                <div class="text-center">
-                  <img class="mx-auto" src="<% process.env.PUBLIC_PATH %>/icon/num1.svg" alt="">
-                  <p class="mt-3">architectural ornament</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
-        <div class="py-5" style="background-image: url(<% process.env.PUBLIC_PATH %>/images/home-banner-1.png);background-position: center;background-size: cover;height: 854px;max-height: 80vh;">
+        <div class="py-5" style="background-image: url(<% process.env.PUBLIC_PATH %>/images/case-banner-2.png);background-position: center;background-size: cover;height: 854px;max-height: 80vh;">
           <div class="container h-100">
             <div class="row no-gutters h-100 align-items-center text-uppercase text-white">
               <div class="col-lg-5">
@@ -44,72 +38,7 @@
                   <a href="#" class="btn btn-secondary">了解更多</a>
                 </div>
               </div>
-              <div class="col-lg-2 d-none d-lg-block">
-                <div class="text-center">
-                  <img class="mx-auto" src="<% process.env.PUBLIC_PATH %>/icon/num1.svg" alt="">
-                  <p class="mt-3">architectural ornament</p>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="py-5 bg-gray">
-      <div class="container-fluid py-lg-4">
-        <h4>业务领域</h4>
-        <p class="text-gray">Service Area</p>
-        <hr/>
-        <div id="slick-home-service" class="text-center">
-          <div class="px-2 py-3">
-            <a href="" class="d-block bg-white px-lg-4 py-lg-5 p-3 hover-box-shadow transition hover-unstyled">
-              <div style="min-height: 120px;">
-                <img class="mx-auto" src="<% process.env.PUBLIC_PATH %>/icon/home-icon-1.svg" alt="">
-              </div>
-              <p>建筑装修装饰工程专业承包壹级</p>
-              <div class="mx-auto mb-2 border-top border-primary" style="width:24px;"></div>
-              <p class="small">architectural ornament</p>
-            </a>
-          </div>
-          <div class="px-2 py-3">
-            <a href="" class="d-block bg-white px-lg-4 py-lg-5 p-3 hover-box-shadow transition hover-unstyled">
-              <div style="min-height: 120px;">
-                <img class="mx-auto" src="<% process.env.PUBLIC_PATH %>/icon/home-icon-2.svg" alt="">
-              </div>
-              <p>建筑装饰工程设计专项甲级</p>
-              <div class="mx-auto mb-2 border-top border-primary" style="width:24px;"></div>
-              <p class="small">architectural ornament</p>
-            </a>
-          </div>
-          <div class="px-2 py-3">
-            <a href="" class="d-block bg-white px-lg-4 py-lg-5 p-3 hover-box-shadow transition hover-unstyled">
-              <div style="min-height: 120px;">
-                <img class="mx-auto" src="<% process.env.PUBLIC_PATH %>/icon/home-icon-3.svg" alt="">
-              </div>
-              <p>钢结构工程专业承包壹级</p>
-              <div class="mx-auto mb-2 border-top border-primary" style="width:24px;"></div>
-              <p class="small">architectural ornament</p>
-            </a>
-          </div>
-          <div class="px-2 py-3">
-            <a href="" class="d-block bg-white px-lg-4 py-lg-5 p-3 hover-box-shadow transition hover-unstyled">
-              <div style="min-height: 120px;">
-                <img class="mx-auto" src="<% process.env.PUBLIC_PATH %>/icon/home-icon-4.svg" alt="">
-              </div>
-              <p>市政展陈工程设计与施工一体化壹级</p>
-              <div class="mx-auto mb-2 border-top border-primary" style="width:24px;"></div>
-              <p class="small">architectural ornament</p>
-            </a>
-          </div>
-          <div class="px-2 py-3">
-            <a href="" class="d-block bg-white px-lg-4 py-lg-5 p-3 hover-box-shadow transition hover-unstyled">
-              <div style="min-height: 120px;">
-                <img class="mx-auto" src="<% process.env.PUBLIC_PATH %>/icon/home-icon-4.svg" alt="">
-              </div>
-              <p>市政展陈工程设计与施工一体化壹级</p>
-              <div class="mx-auto mb-2 border-top border-primary" style="width:24px;"></div>
-              <p class="small">architectural ornament</p>
-            </a>
           </div>
         </div>
       </div>
@@ -819,250 +748,26 @@
             </div>
           </div>
         </div>
+        <nav>
+          <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="#">上一页</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">下一页</a></li>
+          </ul>
+        </nav>
       </div>
     </section>
-    <section class="py-5 bg-gray">
-      <div class="container-fluid py-lg-5">
-        <div class="d-flex flex-lg-row flex-column position-relative">
-          <div class="w-100" style="max-width:480px;">
-            <h4>关于瑞建</h4>
-            <p class="text-gray text-uppercase mb-5">about ruijian</p>
-            <div class="p-lg-5 p-3 position-absolute w-100" style="background-color: rgba(34, 40, 54, 0.9);max-width: 680px;left:0;top:100px;">
-              <nav>
-                <div class="nav nav-tabs" id="about-nav-tab" role="tablist">
-                  <a class="nav-item nav-link active" id="about-nav-1-tab" data-toggle="tab" href="#about-nav-1" role="tab" aria-controls="about-nav-1" aria-selected="true"><span>公司简介</span></a>
-                  <a class="nav-item nav-link" id="about-nav-2-tab" data-toggle="tab" href="#about-nav-2" role="tab" aria-controls="about-nav-2" aria-selected="false"><span>企业资质</span></a>
-                  <a class="nav-item nav-link" id="about-nav-3-tab" data-toggle="tab" href="#about-nav-3" role="tab" aria-controls="about-nav-3" aria-selected="false"><span>荣誉证书</span></a>
-                  <a class="nav-item nav-link" id="about-nav-4-tab" data-toggle="tab" href="#about-nav-4" role="tab" aria-controls="about-nav-4" aria-selected="false"><span>组织架构</span></a>
-                  <a class="nav-item nav-link" id="about-nav-5-tab" data-toggle="tab" href="#about-nav-5" role="tab" aria-controls="about-nav-5" aria-selected="false"><span>企业文化 </span></a>
-                </div>
-              </nav>
-              <div class="tab-content py-3" id="about-nav-tabContent">
-                <div class="tab-pane fade show active" id="about-nav-1" role="tabpanel" aria-labelledby="about-nav-1-tab">
-                  <p class="small text-white mb-5" style="line-height: 28px;">深圳市瑞建建设集团有限公司，创立于2008年，注册资金10180万元。现任中国建筑装饰协会会员、广东省建筑协会会员、深圳市装饰行业协会理事单位、深圳政府采购中心会员、“深圳知名品牌”企业。瑞建集团以装饰为起点，不断创新发展，迅速成长为一家集建筑装饰工程设计、建筑工程、市政公用工程、装饰装修工程、建筑幕墙工程、消防设施工程、机电工程、钢结构工程、城市园林绿化等综合性、一体化的建设集团企业，</p>
-                  <a href="#" class="btn btn-secondary">了解更多</a>
-                </div>
-                <div class="tab-pane fade" id="about-nav-2" role="tabpanel" aria-labelledby="about-nav-2-tab">
-                  <p class="small text-white mb-5" style="line-height: 28px;">深圳市瑞建建设集团有限公司，创立于2008年，注册资金10180万元。现任中国建筑装饰协会会员、广东省建筑协会会员、深圳市装饰行业协会理事单位、深圳政府采购中心会员、“深圳知名品牌”企业。瑞建集团以装饰为起点，不断创新发展，迅速成长为一家集建筑装饰工程设计、建筑工程、市政公用工程、装饰装修工程、建筑幕墙工程、消防设施工程、机电工程、钢结构工程、城市园林绿化等综合性、一体化的建设集团企业，</p>
-                  <a href="#" class="btn btn-secondary">了解更多</a>
-                </div>
-                <div class="tab-pane fade" id="about-nav-3" role="tabpanel" aria-labelledby="about-nav-3-tab">
-                  <p class="small text-white mb-5" style="line-height: 28px;">深圳市瑞建建设集团有限公司，创立于2008年，注册资金10180万元。现任中国建筑装饰协会会员、广东省建筑协会会员、深圳市装饰行业协会理事单位、深圳政府采购中心会员、“深圳知名品牌”企业。瑞建集团以装饰为起点，不断创新发展，迅速成长为一家集建筑装饰工程设计、建筑工程、市政公用工程、装饰装修工程、建筑幕墙工程、消防设施工程、机电工程、钢结构工程、城市园林绿化等综合性、一体化的建设集团企业，</p>
-                  <a href="#" class="btn btn-secondary">了解更多</a>
-                </div>
-                <div class="tab-pane fade" id="about-nav-4" role="tabpanel" aria-labelledby="about-nav-4-tab">
-                  <p class="small text-white mb-5" style="line-height: 28px;">深圳市瑞建建设集团有限公司，创立于2008年，注册资金10180万元。现任中国建筑装饰协会会员、广东省建筑协会会员、深圳市装饰行业协会理事单位、深圳政府采购中心会员、“深圳知名品牌”企业。瑞建集团以装饰为起点，不断创新发展，迅速成长为一家集建筑装饰工程设计、建筑工程、市政公用工程、装饰装修工程、建筑幕墙工程、消防设施工程、机电工程、钢结构工程、城市园林绿化等综合性、一体化的建设集团企业，</p>
-                  <a href="#" class="btn btn-secondary">了解更多</a>
-                </div>
-                <div class="tab-pane fade" id="about-nav-5" role="tabpanel" aria-labelledby="about-nav-5-tab">
-                  <p class="small text-white mb-5" style="line-height: 28px;">深圳市瑞建建设集团有限公司，创立于2008年，注册资金10180万元。现任中国建筑装饰协会会员、广东省建筑协会会员、深圳市装饰行业协会理事单位、深圳政府采购中心会员、“深圳知名品牌”企业。瑞建集团以装饰为起点，不断创新发展，迅速成长为一家集建筑装饰工程设计、建筑工程、市政公用工程、装饰装修工程、建筑幕墙工程、消防设施工程、机电工程、钢结构工程、城市园林绿化等综合性、一体化的建设集团企业，</p>
-                  <a href="#" class="btn btn-secondary">了解更多</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex-fill">
-            <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/home-image-9.png" alt="">
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="home-news" class="py-5">
-      <div class="container-fluid py-lg-5">
-        <h4>最新资讯</h4>
-        <p class="text-gray mb-5 text-uppercase">architectural ornament</p>
-        <div class="row">
-          <div class="col-lg-3 col-md-6 py-3">
-            <a href="#">
-              <p class="h4">07-28</p>
-              <div class="hover-progress-line"></div>
-              <p>专访：建筑作为一种呈现的媒介</p>
-              <p class="small text-muted mb-4 ellipsis" style="line-height: 26px;min-height: 78px;">经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研套室内设计究，集体讨论。</p>
-              <div class="hover-image-box">
-                <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/home-image-10.png" alt="">
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-6 py-3">
-            <a href="#">
-              <p class="h4">09-16</p>
-              <div class="hover-progress-line"></div>
-              <p>“环保简便”引领办公室装修新走向</p>
-              <p class="small text-muted mb-4 ellipsis" style="line-height: 26px;min-height: 78px;">经过多年的研究与调查，从今年的6月开工设计至今，</p>
-              <div class="hover-image-box">
-                <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/home-image-11.png" alt="">
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-6 py-3">
-            <a href="#">
-              <p class="h4">11-26</p>
-              <div class="hover-progress-line"></div>
-              <p>“营改增”对建筑施工企业的影响</p>
-              <p class="small text-muted mb-4 ellipsis" style="line-height: 26px;min-height: 78px;">经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研套室内设计究，集体讨论。勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研套室内设计究，集体讨论。</p>
-              <div class="hover-image-box">
-                <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/home-image-12.png" alt="">
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-6 py-3">
-            <a href="#">
-              <p class="h4">12-27</p>
-              <div class="hover-progress-line"></div>
-              <p>热烈祝贺瑞建升级为集团公司</p>
-              <p class="small text-muted mb-4 ellipsis" style="line-height: 26px;min-height: 78px;">经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研套室内设计究，集体讨论。</p>
-              <div class="hover-image-box">
-                <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/home-image-13.png" alt="">
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="home-team" class="py-5 bg-primary text-center">
-      <div class="container-fluid py-lg-5">
-        <div class="position-relative mb-5">
-          <div class="position-absolute w-100" style="left0;top:50%;border-top: 1px solid rgba(255, 255, 255, 0.1);"></div>
-          <div class="d-flex justify-content-around align-items-center position-relative">
-            <div>
-              <img style="margin-top: 10px;" src="<% process.env.PUBLIC_PATH %>/icon/home-icon-5.svg" alt="">
-            </div>
-            <div class="bg-secondary rounded-circle" style="width:24px;height:24px;"></div>
-            <div>
-              <h4 class="text-white">团队概况</h4>
-              <p class="text-gray mb-0">OUR DESIGN TEAM</p>
-            </div>
-            <div class="bg-secondary rounded-circle" style="width:24px;height:24px;"></div>
-            <div>
-              <img style="margin-top: 10px;" src="<% process.env.PUBLIC_PATH %>/icon/home-icon-6.svg" alt="">
-            </div>
-          </div>
-        </div>
-        <div class="row pt-5">
-          <div class="col-lg-3 col-md-6 py-3">
-            <div class="bg-white p-lg-5 p-4">
-              <p class="countup mb-4">128</p>
-              <p class="h5">一级建造师</p>
-              <div class="mx-auto border-top border-primary my-4" style="width:50px;"></div>
-              <p class="small mb-5 text-muted" style="line-height: 28px;">经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研究，集体讨论。</p>
-              <a href="#" class="btn btn-sm btn-outline-primary">
-                <img src="<% process.env.PUBLIC_PATH %>/icon/add.svg" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 py-3">
-            <div class="bg-white p-lg-5 p-4">
-              <p class="countup mb-4">56</p>
-              <p class="h5">中级工程师</p>
-              <div class="mx-auto border-top border-primary my-4" style="width:50px;"></div>
-              <p class="small mb-5 text-muted" style="line-height: 28px;">经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研究，集体讨论。</p>
-              <a href="#" class="btn btn-sm btn-outline-primary">
-                <img src="<% process.env.PUBLIC_PATH %>/icon/add.svg" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 py-3">
-            <div class="bg-white p-lg-5 p-4">
-              <p class="countup mb-4">48</p>
-              <p class="h5">高级工程师</p>
-              <div class="mx-auto border-top border-primary my-4" style="width:50px;"></div>
-              <p class="small mb-5 text-muted" style="line-height: 28px;">经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研究，集体讨论。</p>
-              <a href="#" class="btn btn-sm btn-outline-primary">
-                <img src="<% process.env.PUBLIC_PATH %>/icon/add.svg" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 py-3">
-            <div class="bg-white p-lg-5 p-4">
-              <p class="countup mb-4">256</p>
-              <p class="h5">成功案例</p>
-              <div class="mx-auto border-top border-primary my-4" style="width:50px;"></div>
-              <p class="small mb-5 text-muted" style="line-height: 28px;">经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研究，集体讨论。</p>
-              <a href="#" class="btn btn-sm btn-outline-primary">
-                <img src="<% process.env.PUBLIC_PATH %>/icon/add.svg" alt="">
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="py-5 bg-gray text-center">
-      <div class="container-lg">
-        <div class="bg-white p-5">
-          <h4>联系我们</h4>
-          <p class="text-gray mb-5">contact us</p>
-          <form class="text-left">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="姓名" required="" />
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="form-group">
-                  <input type="email" class="form-control" placeholder="邮箱" required="" />
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="电话" required="" />
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" rows="3" placeholder="内容"></textarea>
-            </div>
-            <div class="text-center pt-4">
-              <button type="submit" onclick="$('#modal-submit-success').modal()" class="btn btn-secondary">Submit</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
-    <div class="modal" id="modal-submit-success" tabindex="-1" role="dialog">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content text-center">
-          <div class="modal-header pb-0 border-0">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body pb-5">
-            <img class="mb-4" src="<% process.env.PUBLIC_PATH %>/icon/success.svg" alt="">
-            <h4 class="mb-4">提交成功</h4>
-            <p class="small text-muted mb-4">感谢您与我们联系, 我们将在收到消息后第一时间给予您回复！</p>
-            <button type="button" class="btn btn-secondary">确定</button>
-          </div>
-        </div>
-      </div>
-    </div>
     <%= require('html-loader!../common/footer.html') %>
   </body>
 </html>
-
 <script type="text/javascript">
-  $('#slick-home-banner').slick({
+  $('#slick-case-banner').slick({
     prevArrow: '<button type="button" class="slick-prev"><img src="<% process.env.PUBLIC_PATH %>/icon/slick-left.svg"/></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="<% process.env.PUBLIC_PATH %>/icon/slick-right.svg"/></button>',
-    dots: true,
     autoplay: true,
     fade: true,
     autoplaySpeed: 5000
-  })
-  $('#slick-home-service').slick({
-    prevArrow: '<button type="button" class="slick-prev" style="background:url(<% process.env.PUBLIC_PATH %>/icon/arrows.svg) 0 center no-repeat;left:-10px;"></button>',
-    nextArrow: '<button type="button" class="slick-next" style="background:url(<% process.env.PUBLIC_PATH %>/icon/arrows.svg) -1846px center no-repeat;right:-10px;"></button>',
-    autoplay: true,
-    slidesToShow: 4,
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          dots: true,
-          arrows: false,
-          slidesToShow: 1
-        }
-      }
-    ]
   })
 </script>

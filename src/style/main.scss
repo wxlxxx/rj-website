@@ -29,6 +29,33 @@ $input-padding-x: 0;
 .bg-black {
   background-color: #222;
 }
+.pagination {
+  .page-item {
+    margin: 0 4px;
+    .page-link {
+      background-color: #4F4F4F;
+      color: #fff;
+      border: none;
+      &:hover {
+        background-color: $primary;
+        color: #fff;
+      }
+    }
+    &.active {
+      .page-link {
+        background-color: $primary;
+      }
+    }
+  }
+}
+.breadcrumb {
+  background-color: inherit;
+  margin: 0;
+  padding-left: 0;
+  .breadcrumb-item + .breadcrumb-item::before {
+    content: '>'
+  }
+}
 
 // slick
 .slick-arrow {
@@ -426,6 +453,11 @@ html {
     @media(min-width: 992px){
       font-size: 80px;
     }
+  }
+}
+#slick-case-detail-nav {
+  .slick-slide {
+    // height: 25%;
   }
 }
 footer {
