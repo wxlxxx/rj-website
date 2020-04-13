@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>瑞建</title>
+  </head>
+  <body>
+    <%= require('html-loader!../common/header.html') %>
+    <section class="d-flex align-items-end" style="background:url(<% process.env.PUBLIC_PATH %>/images/about-banner.png) top no-repeat;background-size: auto 100%;height: 500px;max-height: 80vh;">
+      <div class="container">
+        <nav>
+          <div class="nav nav-tabs" id="about-nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="about-nav-1-tab" data-toggle="tab" href="#about-nav-1" role="tab" aria-controls="about-nav-1" aria-selected="true">瑞建简介</a>
+            <a class="nav-item nav-link" id="about-nav-2-tab" data-toggle="tab" href="#about-nav-2" role="tab" aria-controls="about-nav-2" aria-selected="false">董事长致辞</a>
+            <a class="nav-item nav-link" id="about-nav-3-tab" data-toggle="tab" href="#about-nav-3" role="tab" aria-controls="about-nav-3" aria-selected="false">企业文化</a>
+            <a class="nav-item nav-link" id="about-nav-4-tab" data-toggle="tab" href="#about-nav-4" role="tab" aria-controls="about-nav-4" aria-selected="false">管理构架</a>
+            <a class="nav-item nav-link" id="about-nav-5-tab" data-toggle="tab" href="#about-nav-5" role="tab" aria-controls="about-nav-5" aria-selected="false">资质荣誉</a>
+            <a class="nav-item nav-link" id="about-nav-6-tab" data-toggle="tab" href="#about-nav-6" role="tab" aria-controls="about-nav-6" aria-selected="false">发展历程</a>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <section class="py-5">
+      <div class="container py-lg-4">
+        <div class="tab-content pt-5 pt-lg-0" id="about-nav-tabContent">
+          <div class="tab-pane fade show active" id="about-nav-1" role="tabpanel" aria-labelledby="about-nav-1-tab">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">首页</a></li>
+                <li class="breadcrumb-item"><a href="#">瑞建简介</a></li>
+                <li class="breadcrumb-item active" aria-current="page">深圳市瑞建建设集团有限公司简介</li>
+              </ol>
+            </nav>
+            <hr class="mb-5"/>
+            <div class="row">
+              <div class="col-lg-6 py-3">
+                <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/about-image-1.png" alt="">
+              </div>
+              <div class="col-lg-6 py-3">
+                <div class="mb-4">
+                  <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/logo-horizontal.svg" alt="">
+                </div>
+                <div class="text-muted" style="line-height: 28px;">
+                  <p>深圳市瑞建建设集团有限公司成立于2008年。注册资金10180万元。</p>
+                  <p>设计甲级,施工一级,拥有独立设计团队,坚持无创意不设计,以设计创意为核心目标引导施工项目，提供一站式设计服务,让您尊享专业设计团队的高品质保障。</p>
+                  <p>设计团队20多人，工程技术人员40多人，施工团队50多个，施工技术人员达到500多人，我们一直以追求卓越品质为核心，以人为本，高质量完成客户的要求。</p>
+                  <p>在长期发展过程中，瑞建将以成立建设集团为目标，逐步建立以商业办公、别墅豪宅、酒店、样板房装饰装修设计施工为龙头，创建房屋建筑、机电安装、园林绿化等工程为辅助的综合型工程类公司。</p>
+                  <p>公司成立“技术创新委员会”与“工程质量品牌部”，为满足工程项目的需要，各专业技术人员保证现场在位、监督到位，促进设计与施工水平的完美结合，监督现场施工安全与施工质量。 技术专业，服务周到，为创造更好更高的共赢效益业绩而努力。</p>
+                  <p>2015年瑞建建筑装饰有限公司历时六年的稳健发展，雄心壮志，隆重发布《瑞建建设集团》规划蓝图，以创建企业文化体系为核心，大步迈向未来。这是“瑞建”文化建设的里程碑事件。</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-gray py-5">
+              <div class="container py-lg-4">
+                <div class="row">
+                  <div class="col-lg-3 col-md-6 py-3">
+                    <a href="#" class="hover-unstyled d-block">
+                      <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-1.png);"></div>
+                      <p class="h5 mb-0">企业使命</p>
+                      <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
+                      <p class="text-gray small hover-translate-up">品质  成功之轮</p>
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-6 py-3">
+                    <a href="#" class="hover-unstyled d-block">
+                      <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-2.png);"></div>
+                      <p class="h5 mb-0">企业愿景</p>
+                      <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
+                      <p class="text-gray small hover-translate-up">最具国际竞争力的建筑装饰装修工程、园林绿化工程、机电安装工程，设计与施工综合性企业。</p>
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-6 py-3">
+                    <a href="#" class="hover-unstyled d-block">
+                      <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-3.png);"></div>
+                      <p class="h5 mb-0">核心价值</p>
+                      <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
+                      <p class="text-gray small hover-translate-up">品质保障 以人为本</p>
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-6 py-3">
+                    <a href="#" class="hover-unstyled d-block">
+                      <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-4.png);"></div>
+                      <p class="h5 mb-0">企业精神</p>
+                      <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
+                      <p class="text-gray small hover-translate-up">诚信 创新 超越 共赢,共创美好未来。</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="about-nav-2" role="tabpanel" aria-labelledby="about-nav-2-tab">...</div>
+          <div class="tab-pane fade" id="about-nav-3" role="tabpanel" aria-labelledby="about-nav-3-tab">...</div>
+          <div class="tab-pane fade" id="about-nav-4" role="tabpanel" aria-labelledby="about-nav-4-tab">
+            <div class="text-center">
+              <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/about-image-2.svg" alt="">
+            </div>
+          </div>
+          <div class="tab-pane fade" id="about-nav-5" role="tabpanel" aria-labelledby="about-nav-5-tab">...</div>
+        </div>
+      </div>
+    </section>
+    <%= require('html-loader!../common/footer.html') %>
+  </body>
+</html>
+<script type="text/javascript">
+$(function () {
+  $(window.location.hash).tab('show')
+  $(window).on('hashchange', function(){
+    $(window.location.hash).tab('show')
+  })
+})
+</script>
