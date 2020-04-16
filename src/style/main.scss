@@ -164,6 +164,13 @@ a:hover {
     opacity: 0;
   }
 }
+.hover-bg-primary {
+  transition: all 0.4s;
+  &:hover {
+    background-color: $primary;
+    color: #fff;
+  }
+}
 .ellipsis {
   overflow : hidden;
   text-overflow: ellipsis;
@@ -482,6 +489,7 @@ a:hover {
   .slick-slide {
     line-height: 0;
     min-width: 100%;
+    max-width: 100%;
     margin: .5rem 0;
     &.slick-current {
       border: 4px solid $secondary;
@@ -515,6 +523,21 @@ a:hover {
     }
     &:hover {
       color: $secondary;
+    }
+  }
+}
+#slick-about-honor-nav {
+  .slick-track {
+    padding: 0 1rem;
+  }
+  .slick-slide {
+    line-height: 0;
+    max-width: 100%;
+    min-width: 100%;
+    margin: .5rem 0;
+    &.slick-current {
+      border: 4px solid $secondary;
+      box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.4);
     }
   }
 }
