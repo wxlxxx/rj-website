@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>瑞建</title>
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=1.0&type=webgl&ak=IUfwzByVAiIMGfXRLCDpGQctttlZmmIh"></script>
+  </head>
+  <body>
+    <%= require('html-loader!../common/header.ejs') %>
+    <section style="background:url(<%= process.env.IMAGE_PATH %>images/contact-banner.png) center no-repeat;height: 500px;max-height: 60vh;background-size: cover;">
+    </section>
+    <section class="py-5" id="service-list">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">首页</a></li>
+            <li class="breadcrumb-item"><a href="#">联系我们</a></li>
+            <li class="breadcrumb-item active" aria-current="page">联系我们</li>
+          </ol>
+        </nav>
+        <hr class="mb-5"/>
+        <div class="row text-center">
+          <div class="col-lg-3 col-md-6 py-3">
+            <a href="#" class="d-block p-4 border hover-unstyled hover-bg-primary">
+              <div class="mb-4" style="min-height: 56px;">
+                <img class="hover-fade-out" src="<%= process.env.IMAGE_PATH %>icon/contact-icon-1.svg" alt="">
+              </div>
+              <div class="hover-translate-up">
+                <p class="h5">电话</p>
+                <div class="border-top border-primary mx-auto my-3" style="width: 24px;"></div>
+                <p class="small text-gray">0755-83283839</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 py-3">
+            <a href="#" class="d-block p-4 border hover-unstyled hover-bg-primary">
+              <div class="mb-4" style="min-height: 56px;">
+                <img class="hover-fade-out" src="<%= process.env.IMAGE_PATH %>icon/contact-icon-2.svg" alt="">
+              </div>
+              <div class="hover-translate-up">
+                <p class="h5">传真</p>
+                <div class="border-top border-primary mx-auto my-3" style="width: 24px;"></div>
+                <p class="small text-gray">0755-83283836</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 py-3">
+            <a href="#" class="d-block p-4 border hover-unstyled hover-bg-primary">
+              <div class="mb-4" style="min-height: 56px;">
+                <img class="hover-fade-out" src="<%= process.env.IMAGE_PATH %>icon/contact-icon-3.svg" alt="">
+              </div>
+              <div class="hover-translate-up">
+                <p class="h5">邮箱</p>
+                <div class="border-top border-primary mx-auto my-3" style="width: 24px;"></div>
+                <p class="small text-gray">zongjingban@ruijianjt.com</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 py-3">
+            <a href="#" class="d-block p-4 border hover-unstyled hover-bg-primary">
+              <div class="mb-4" style="min-height: 56px;">
+                <img class="hover-fade-out" src="<%= process.env.IMAGE_PATH %>icon/contact-icon-4.svg" alt="">
+              </div>
+              <div class="hover-translate-up">
+                <p class="h5">地址</p>
+                <div class="border-top border-primary mx-auto my-3" style="width: 24px;"></div>
+                <p class="small text-gray">深圳市福田区上步中路工会大厦A座9018室</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid">
+        <div id="bd-map" style="height: 60vh;"></div>
+      </div>
+    </section>
+    <section class="py-5">
+      <div class="container py-lg-4">
+        <div class="d-flex mb-5 align-items-end">
+          <p class="h5 mb-0">联系我们</p>
+          <p class="text-gray small mb-0">（如果您对我们有什么建议、投诉、需求，可以在此留言告诉我们，我们会在第一时间了解并及时与您联系。）​​​</p>
+        </div>
+        <form class="text-left">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="姓名" required="" />
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="邮箱" required="" />
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="电话" required="" />
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" rows="3" placeholder="内容"></textarea>
+          </div>
+          <div class="text-center pt-4">
+            <button type="submit" onclick="$('#modal-submit-success').modal()" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <div class="modal" id="modal-submit-success" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content text-center">
+          <div class="modal-header pb-0 border-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body pb-5">
+            <img class="mb-4" src="<%= process.env.IMAGE_PATH %>icon/success.svg" alt="">
+            <h4 class="mb-4">提交成功</h4>
+            <p class="small text-muted mb-4">感谢您与我们联系, 我们将在收到消息后第一时间给予您回复！</p>
+            <button type="button" class="btn btn-secondary">确定</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%= require('html-loader!../common/footer.ejs') %>
+  </body>
+</html>
+<script type="text/javascript">
+var map = new BMapGL.Map("bd-map");
+var point = new BMapGL.Point(116.404, 39.915);
+map.centerAndZoom(point, 15);
+var opts = {
+    width: 250,
+    height: 100,
+    title: "深圳市瑞建建设集团"
+}
+var infoWindow = new BMapGL.InfoWindow("深圳市福田区上步中路工会大厦A座9018室", opts);
+map.openInfoWindow(infoWindow, map.getCenter());
+var marker = new BMapGL.Marker(point);
+map.addOverlay(marker);
+</script>

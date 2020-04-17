@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const fs = require('fs');
 const CopyPlugin = require('copy-webpack-plugin');
-const webpack = require('webpack')
+const webpack = require('webpack');
 
 function generateHtmlPlugins (templateDir) {
   // Read files in template directory
@@ -54,7 +54,14 @@ const devConfig = {
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
-          'file-loader',
+          {
+            loader:'url-loader',
+            options:{
+                name:'images/[name].[ext]',
+                limit:20000,
+                publicPath:'../'
+            }
+          }
         ]
       },
       {
@@ -70,7 +77,7 @@ const devConfig = {
       { from: path.resolve(__dirname, './public'), to: path.resolve(__dirname, './dist') }
     ]),
     new webpack.DefinePlugin({
-      'process.env.PUBLIC_PATH': JSON.stringify('')
+      'process.env.IMAGE_PATH': JSON.stringify(process.env.IMAGE_PATH)
     })
   ].concat(htmlPlugins)
 }
@@ -82,7 +89,7 @@ const prodConfig = {
   output: {
     filename: 'assets/[name].bundle.js',
     path: path.resolve(__dirname, './dist'),
-    publicPath: './',
+    publicPath: process.env.PUBLIC_PATH || '/',
   },
   module: {
     rules: [
@@ -116,7 +123,14 @@ const prodConfig = {
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
-          'file-loader',
+          {
+            loader:'url-loader',
+            options:{
+                name:'images/[name].[ext]',
+                limit:20000,
+                publicPath:'../'
+            }
+          }
         ]
       },
       {
@@ -137,9 +151,14 @@ const prodConfig = {
       chunkFilename: 'assets/[id].css',
     }),
     new webpack.DefinePlugin({
-      'process.env.PUBLIC_PATH': JSON.stringify('')
+      'process.env.IMAGE_PATH': JSON.stringify(process.env.IMAGE_PATH)
     })
-  ].concat(htmlPlugins)
+  ].concat(htmlPlugins),
+  optimization: {
+    splitChunks: {
+      chunks: 'all'
+    }
+  }
 }
 
 module.exports = (env, argv) => {

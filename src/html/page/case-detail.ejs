@@ -6,7 +6,7 @@
     <title>瑞建</title>
   </head>
   <body>
-    <%= require('html-loader!../common/header.html') %>
+    <%= require('html-loader!../common/header.ejs') %>
     <section class="py-4">
       <div class="container">
         <nav aria-label="breadcrumb">
@@ -24,32 +24,32 @@
           <div class="col-lg-10">
             <div id="slick-case-detail-banner">
               <div>
-                <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/case-banner-1.png" alt="">
+                <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/case-banner-1.png" alt="">
               </div>
               <div>
-                <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/case-banner-2.png" alt="">
+                <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/case-banner-2.png" alt="">
               </div>
               <div>
-                <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/case-banner-1.png" alt="">
+                <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/case-banner-1.png" alt="">
               </div>
               <div>
-                <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/case-banner-2.png" alt="">
+                <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/case-banner-2.png" alt="">
               </div>
             </div>
           </div>
           <div class="col-lg-2 d-none d-lg-block">
             <div id="slick-case-detail-nav">
               <div>
-                <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/case-banner-1.png" alt="">
+                <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/case-banner-1.png" alt="">
               </div>
               <div>
-                <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/case-banner-2.png" alt="">
+                <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/case-banner-2.png" alt="">
               </div>
               <div>
-                <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/case-banner-1.png" alt="">
+                <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/case-banner-1.png" alt="">
               </div>
               <div>
-                <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/case-banner-2.png" alt="">
+                <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/case-banner-2.png" alt="">
               </div>
             </div>
           </div>
@@ -182,7 +182,7 @@
         </div>
       </div>
     </section>
-    <%= require('html-loader!../common/footer.html') %>
+    <%= require('html-loader!../common/footer.ejs') %>
   </body>
 </html>
 <script type="text/javascript">
@@ -190,8 +190,8 @@
     arrows: false
   })
   $('#slick-case-detail-banner').slick({
-    prevArrow: '<button type="button" class="slick-prev"><img src="<% process.env.PUBLIC_PATH %>/icon/slick-left.svg"/></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="<% process.env.PUBLIC_PATH %>/icon/slick-right.svg"/></button>',
+    prevArrow: '<button type="button" class="slick-prev"><img src="<%= process.env.IMAGE_PATH %>icon/slick-left.svg"/></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="<%= process.env.IMAGE_PATH %>icon/slick-right.svg"/></button>',
     fade: true,
     autoplay: true,
     asNavFor: '#slick-case-detail-nav',

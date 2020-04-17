@@ -6,10 +6,10 @@
     <title>瑞建</title>
   </head>
   <body>
-    <%= require('html-loader!../common/header.html') %>
+    <%= require('html-loader!../common/header.ejs') %>
     <section class="bg-gray">
       <div id="slick-case-banner">
-        <div class="py-5" style="background-image: url(<% process.env.PUBLIC_PATH %>/images/case-banner-1.png);background-position: center;background-size: cover;height: 854px;max-height: 80vh;">
+        <div class="py-5" style="background-image: url(<%= process.env.IMAGE_PATH %>images/case-banner-1.png);background-position: center;background-size: cover;height: 854px;max-height: 80vh;">
           <div class="container h-100">
             <div class="row no-gutters h-100 align-items-center text-uppercase text-white">
               <div class="col-lg-5">
@@ -25,7 +25,7 @@
             </div>
           </div>
         </div>
-        <div class="py-5" style="background-image: url(<% process.env.PUBLIC_PATH %>/images/case-banner-2.png);background-position: center;background-size: cover;height: 854px;max-height: 80vh;">
+        <div class="py-5" style="background-image: url(<%= process.env.IMAGE_PATH %>images/case-banner-2.png);background-position: center;background-size: cover;height: 854px;max-height: 80vh;">
           <div class="container h-100">
             <div class="row no-gutters h-100 align-items-center text-uppercase text-white">
               <div class="col-lg-5">
@@ -71,7 +71,7 @@
             <div class="row">
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-1.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-1.png);"></div>
                   <p class="h5 mb-0">艺廊及商店改造 / DO.DO.</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up hover-translate-up">办公空间设计</p>
@@ -79,7 +79,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-2.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-2.png);"></div>
                   <p class="h5 mb-0">以色列立方别墅/ Ella Sahar</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up hover-translate-up">住宅空间设计</p>
@@ -87,7 +87,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-3.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-3.png);"></div>
                   <p class="h5 mb-0">NA 住宅 / Architect Oshir Asaban</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up hover-translate-up">其他</p>
@@ -95,7 +95,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-4.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-4.png);"></div>
                   <p class="h5 mb-0">秘密花园住宅 / Wallflower Architecture</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up hover-translate-up">办公空间设计</p>
@@ -103,7 +103,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-5.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-5.png);"></div>
                   <p class="h5 mb-0">艺廊及商店改造 / DO.DO.</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up hover-translate-up">办公空间设计</p>
@@ -111,7 +111,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-6.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-6.png);"></div>
                   <p class="h5 mb-0">以色列立方别墅/ Ella Sahar</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up hover-translate-up">住宅空间设计</p>
@@ -119,7 +119,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-7.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-7.png);"></div>
                   <p class="h5 mb-0">NA 住宅 / Architect Oshir Asaban</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up hover-translate-up">其他</p>
@@ -127,7 +127,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-8.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-8.png);"></div>
                   <p class="h5 mb-0">秘密花园住宅 / Wallflower Architecture</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up hover-translate-up">办公空间设计</p>
@@ -139,7 +139,7 @@
             <div class="row">
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-1.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-1.png);"></div>
                   <p class="h5 mb-0">艺廊及商店改造 / DO.DO.</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -147,7 +147,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-2.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-2.png);"></div>
                   <p class="h5 mb-0">以色列立方别墅/ Ella Sahar</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">住宅空间设计</p>
@@ -155,7 +155,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-3.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-3.png);"></div>
                   <p class="h5 mb-0">NA 住宅 / Architect Oshir Asaban</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">其他</p>
@@ -163,7 +163,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-4.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-4.png);"></div>
                   <p class="h5 mb-0">秘密花园住宅 / Wallflower Architecture</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -171,7 +171,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-5.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-5.png);"></div>
                   <p class="h5 mb-0">艺廊及商店改造 / DO.DO.</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -179,7 +179,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-6.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-6.png);"></div>
                   <p class="h5 mb-0">以色列立方别墅/ Ella Sahar</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">住宅空间设计</p>
@@ -187,7 +187,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-7.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-7.png);"></div>
                   <p class="h5 mb-0">NA 住宅 / Architect Oshir Asaban</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">其他</p>
@@ -195,7 +195,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-8.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-8.png);"></div>
                   <p class="h5 mb-0">秘密花园住宅 / Wallflower Architecture</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -207,7 +207,7 @@
             <div class="row">
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-1.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-1.png);"></div>
                   <p class="h5 mb-0">艺廊及商店改造 / DO.DO.</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -215,7 +215,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-2.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-2.png);"></div>
                   <p class="h5 mb-0">以色列立方别墅/ Ella Sahar</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">住宅空间设计</p>
@@ -223,7 +223,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-3.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-3.png);"></div>
                   <p class="h5 mb-0">NA 住宅 / Architect Oshir Asaban</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">其他</p>
@@ -231,7 +231,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-4.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-4.png);"></div>
                   <p class="h5 mb-0">秘密花园住宅 / Wallflower Architecture</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -239,7 +239,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-5.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-5.png);"></div>
                   <p class="h5 mb-0">艺廊及商店改造 / DO.DO.</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -247,7 +247,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-6.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-6.png);"></div>
                   <p class="h5 mb-0">以色列立方别墅/ Ella Sahar</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">住宅空间设计</p>
@@ -255,7 +255,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-7.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-7.png);"></div>
                   <p class="h5 mb-0">NA 住宅 / Architect Oshir Asaban</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">其他</p>
@@ -263,7 +263,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-8.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-8.png);"></div>
                   <p class="h5 mb-0">秘密花园住宅 / Wallflower Architecture</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -275,7 +275,7 @@
             <div class="row">
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-1.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-1.png);"></div>
                   <p class="h5 mb-0">艺廊及商店改造 / DO.DO.</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -283,7 +283,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-2.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-2.png);"></div>
                   <p class="h5 mb-0">以色列立方别墅/ Ella Sahar</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">住宅空间设计</p>
@@ -291,7 +291,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-3.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-3.png);"></div>
                   <p class="h5 mb-0">NA 住宅 / Architect Oshir Asaban</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">其他</p>
@@ -299,7 +299,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-4.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-4.png);"></div>
                   <p class="h5 mb-0">秘密花园住宅 / Wallflower Architecture</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -307,7 +307,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-5.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-5.png);"></div>
                   <p class="h5 mb-0">艺廊及商店改造 / DO.DO.</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -315,7 +315,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-6.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-6.png);"></div>
                   <p class="h5 mb-0">以色列立方别墅/ Ella Sahar</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">住宅空间设计</p>
@@ -323,7 +323,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-7.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-7.png);"></div>
                   <p class="h5 mb-0">NA 住宅 / Architect Oshir Asaban</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">其他</p>
@@ -331,7 +331,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-8.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-8.png);"></div>
                   <p class="h5 mb-0">秘密花园住宅 / Wallflower Architecture</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -343,7 +343,7 @@
             <div class="row">
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-1.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-1.png);"></div>
                   <p class="h5 mb-0">艺廊及商店改造 / DO.DO.</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -351,7 +351,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-2.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-2.png);"></div>
                   <p class="h5 mb-0">以色列立方别墅/ Ella Sahar</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">住宅空间设计</p>
@@ -359,7 +359,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-3.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-3.png);"></div>
                   <p class="h5 mb-0">NA 住宅 / Architect Oshir Asaban</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">其他</p>
@@ -367,7 +367,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-4.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-4.png);"></div>
                   <p class="h5 mb-0">秘密花园住宅 / Wallflower Architecture</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -375,7 +375,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-5.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-5.png);"></div>
                   <p class="h5 mb-0">艺廊及商店改造 / DO.DO.</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -383,7 +383,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-6.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-6.png);"></div>
                   <p class="h5 mb-0">以色列立方别墅/ Ella Sahar</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">住宅空间设计</p>
@@ -391,7 +391,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-7.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-7.png);"></div>
                   <p class="h5 mb-0">NA 住宅 / Architect Oshir Asaban</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">其他</p>
@@ -399,7 +399,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-8.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-8.png);"></div>
                   <p class="h5 mb-0">秘密花园住宅 / Wallflower Architecture</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -411,7 +411,7 @@
             <div class="row">
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-1.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-1.png);"></div>
                   <p class="h5 mb-0">艺廊及商店改造 / DO.DO.</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -419,7 +419,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-2.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-2.png);"></div>
                   <p class="h5 mb-0">以色列立方别墅/ Ella Sahar</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">住宅空间设计</p>
@@ -427,7 +427,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-3.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-3.png);"></div>
                   <p class="h5 mb-0">NA 住宅 / Architect Oshir Asaban</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">其他</p>
@@ -435,7 +435,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-4.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-4.png);"></div>
                   <p class="h5 mb-0">秘密花园住宅 / Wallflower Architecture</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -443,7 +443,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-5.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-5.png);"></div>
                   <p class="h5 mb-0">艺廊及商店改造 / DO.DO.</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -451,7 +451,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-6.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-6.png);"></div>
                   <p class="h5 mb-0">以色列立方别墅/ Ella Sahar</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">住宅空间设计</p>
@@ -459,7 +459,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-7.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-7.png);"></div>
                   <p class="h5 mb-0">NA 住宅 / Architect Oshir Asaban</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">其他</p>
@@ -467,7 +467,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-8.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-8.png);"></div>
                   <p class="h5 mb-0">秘密花园住宅 / Wallflower Architecture</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -479,7 +479,7 @@
             <div class="row">
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-1.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-1.png);"></div>
                   <p class="h5 mb-0">艺廊及商店改造 / DO.DO.</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -487,7 +487,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-2.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-2.png);"></div>
                   <p class="h5 mb-0">以色列立方别墅/ Ella Sahar</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">住宅空间设计</p>
@@ -495,7 +495,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-3.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-3.png);"></div>
                   <p class="h5 mb-0">NA 住宅 / Architect Oshir Asaban</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">其他</p>
@@ -503,7 +503,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-4.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-4.png);"></div>
                   <p class="h5 mb-0">秘密花园住宅 / Wallflower Architecture</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -511,7 +511,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-5.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-5.png);"></div>
                   <p class="h5 mb-0">艺廊及商店改造 / DO.DO.</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -519,7 +519,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-6.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-6.png);"></div>
                   <p class="h5 mb-0">以色列立方别墅/ Ella Sahar</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">住宅空间设计</p>
@@ -527,7 +527,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-7.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-7.png);"></div>
                   <p class="h5 mb-0">NA 住宅 / Architect Oshir Asaban</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">其他</p>
@@ -535,7 +535,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-8.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-8.png);"></div>
                   <p class="h5 mb-0">秘密花园住宅 / Wallflower Architecture</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -547,7 +547,7 @@
             <div class="row">
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-1.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-1.png);"></div>
                   <p class="h5 mb-0">艺廊及商店改造 / DO.DO.</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -555,7 +555,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-2.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-2.png);"></div>
                   <p class="h5 mb-0">以色列立方别墅/ Ella Sahar</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">住宅空间设计</p>
@@ -563,7 +563,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-3.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-3.png);"></div>
                   <p class="h5 mb-0">NA 住宅 / Architect Oshir Asaban</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">其他</p>
@@ -571,7 +571,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-4.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-4.png);"></div>
                   <p class="h5 mb-0">秘密花园住宅 / Wallflower Architecture</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -579,7 +579,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-5.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-5.png);"></div>
                   <p class="h5 mb-0">艺廊及商店改造 / DO.DO.</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -587,7 +587,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-6.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-6.png);"></div>
                   <p class="h5 mb-0">以色列立方别墅/ Ella Sahar</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">住宅空间设计</p>
@@ -595,7 +595,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-7.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-7.png);"></div>
                   <p class="h5 mb-0">NA 住宅 / Architect Oshir Asaban</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">其他</p>
@@ -603,7 +603,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-8.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-8.png);"></div>
                   <p class="h5 mb-0">秘密花园住宅 / Wallflower Architecture</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -615,7 +615,7 @@
             <div class="row">
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-1.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-1.png);"></div>
                   <p class="h5 mb-0">艺廊及商店改造 / DO.DO.</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -623,7 +623,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-2.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-2.png);"></div>
                   <p class="h5 mb-0">以色列立方别墅/ Ella Sahar</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">住宅空间设计</p>
@@ -631,7 +631,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-3.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-3.png);"></div>
                   <p class="h5 mb-0">NA 住宅 / Architect Oshir Asaban</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">其他</p>
@@ -639,7 +639,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-4.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-4.png);"></div>
                   <p class="h5 mb-0">秘密花园住宅 / Wallflower Architecture</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -647,7 +647,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-5.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-5.png);"></div>
                   <p class="h5 mb-0">艺廊及商店改造 / DO.DO.</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -655,7 +655,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-6.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-6.png);"></div>
                   <p class="h5 mb-0">以色列立方别墅/ Ella Sahar</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">住宅空间设计</p>
@@ -663,7 +663,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-7.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-7.png);"></div>
                   <p class="h5 mb-0">NA 住宅 / Architect Oshir Asaban</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">其他</p>
@@ -671,7 +671,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-8.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-8.png);"></div>
                   <p class="h5 mb-0">秘密花园住宅 / Wallflower Architecture</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -683,7 +683,7 @@
             <div class="row">
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-1.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-1.png);"></div>
                   <p class="h5 mb-0">艺廊及商店改造 / DO.DO.</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -691,7 +691,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-2.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-2.png);"></div>
                   <p class="h5 mb-0">以色列立方别墅/ Ella Sahar</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">住宅空间设计</p>
@@ -699,7 +699,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-3.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-3.png);"></div>
                   <p class="h5 mb-0">NA 住宅 / Architect Oshir Asaban</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">其他</p>
@@ -707,7 +707,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-4.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-4.png);"></div>
                   <p class="h5 mb-0">秘密花园住宅 / Wallflower Architecture</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -715,7 +715,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-5.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-5.png);"></div>
                   <p class="h5 mb-0">艺廊及商店改造 / DO.DO.</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -723,7 +723,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-6.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-6.png);"></div>
                   <p class="h5 mb-0">以色列立方别墅/ Ella Sahar</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">住宅空间设计</p>
@@ -731,7 +731,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-7.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-7.png);"></div>
                   <p class="h5 mb-0">NA 住宅 / Architect Oshir Asaban</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">其他</p>
@@ -739,7 +739,7 @@
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="/case-detail.html" class="hover-unstyled">
-                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-8.png);"></div>
+                  <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-8.png);"></div>
                   <p class="h5 mb-0">秘密花园住宅 / Wallflower Architecture</p>
                   <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                   <p class="text-gray small hover-translate-up">办公空间设计</p>
@@ -759,13 +759,13 @@
         </nav>
       </div>
     </section>
-    <%= require('html-loader!../common/footer.html') %>
+    <%= require('html-loader!../common/footer.ejs') %>
   </body>
 </html>
 <script type="text/javascript">
   $('#slick-case-banner').slick({
-    prevArrow: '<button type="button" class="slick-prev"><img src="<% process.env.PUBLIC_PATH %>/icon/slick-left.svg"/></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="<% process.env.PUBLIC_PATH %>/icon/slick-right.svg"/></button>',
+    prevArrow: '<button type="button" class="slick-prev"><img src="<%= process.env.IMAGE_PATH %>icon/slick-left.svg"/></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="<%= process.env.IMAGE_PATH %>icon/slick-right.svg"/></button>',
     autoplay: true,
     fade: true,
     autoplaySpeed: 5000

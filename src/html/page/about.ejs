@@ -6,8 +6,8 @@
     <title>瑞建</title>
   </head>
   <body>
-    <%= require('html-loader!../common/header.html') %>
-    <section class="d-flex align-items-end" style="background:url(<% process.env.PUBLIC_PATH %>/images/about-banner.png) top no-repeat;background-size: auto 100%;height: 500px;max-height: 80vh;">
+    <%= require('html-loader!../common/header.ejs') %>
+    <section class="d-flex align-items-end" style="background:url(<%= process.env.IMAGE_PATH %>images/about-banner.png) top no-repeat;background-size: auto 100%;height: 500px;max-height: 80vh;">
       <div class="container">
         <nav>
           <div class="nav nav-tabs" id="about-nav-tab" role="tablist">
@@ -34,11 +34,11 @@
             <hr class="mb-5"/>
             <div class="row">
               <div class="col-lg-6 py-3">
-                <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/about-image-1.png" alt="">
+                <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-1.png" alt="">
               </div>
               <div class="col-lg-6 py-3">
                 <div class="mb-4">
-                  <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/logo-horizontal.svg" alt="">
+                  <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/logo-horizontal.svg" alt="">
                 </div>
                 <div class="text-muted" style="line-height: 28px;">
                   <p>深圳市瑞建建设集团有限公司成立于2008年。注册资金10180万元。</p>
@@ -55,7 +55,7 @@
                 <div class="row">
                   <div class="col-lg-3 col-md-6 py-3">
                     <a href="#" class="hover-unstyled d-block">
-                      <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-1.png);"></div>
+                      <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-1.png);"></div>
                       <p class="h5 mb-0">企业使命</p>
                       <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                       <p class="text-gray small hover-translate-up">品质  成功之轮</p>
@@ -63,7 +63,7 @@
                   </div>
                   <div class="col-lg-3 col-md-6 py-3">
                     <a href="#" class="hover-unstyled d-block">
-                      <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-2.png);"></div>
+                      <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-2.png);"></div>
                       <p class="h5 mb-0">企业愿景</p>
                       <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                       <p class="text-gray small hover-translate-up">最具国际竞争力的建筑装饰装修工程、园林绿化工程、机电安装工程，设计与施工综合性企业。</p>
@@ -71,7 +71,7 @@
                   </div>
                   <div class="col-lg-3 col-md-6 py-3">
                     <a href="#" class="hover-unstyled d-block">
-                      <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-3.png);"></div>
+                      <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-3.png);"></div>
                       <p class="h5 mb-0">核心价值</p>
                       <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                       <p class="text-gray small hover-translate-up">品质保障 以人为本</p>
@@ -79,7 +79,7 @@
                   </div>
                   <div class="col-lg-3 col-md-6 py-3">
                     <a href="#" class="hover-unstyled d-block">
-                      <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<% process.env.PUBLIC_PATH %>/images/home-image-4.png);"></div>
+                      <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-4.png);"></div>
                       <p class="h5 mb-0">企业精神</p>
                       <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
                       <p class="text-gray small hover-translate-up">诚信 创新 超越 共赢,共创美好未来。</p>
@@ -112,7 +112,7 @@
               <div class="d-flex justify-content-end align-items-center pt-5">
                 <p class="mb-0">瑞建集团董事长</p>
                 <div class="border-top border-primary mx-3" style="width:32px;"></div>
-                <img src="<% process.env.PUBLIC_PATH %>/icon/sign.svg" alt="">
+                <img src="<%= process.env.IMAGE_PATH %>icon/sign.svg" alt="">
               </div>
             </div>
           </div>
@@ -129,7 +129,7 @@
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="#" class="d-block p-4 border hover-unstyled hover-bg-primary">
                   <div class="mb-4" style="min-height: 56px;">
-                    <img class="hover-fade-out" src="<% process.env.PUBLIC_PATH %>/icon/about-icon-2.svg" alt="">
+                    <img class="hover-fade-out" src="<%= process.env.IMAGE_PATH %>icon/about-icon-2.svg" alt="">
                   </div>
                   <div class="hover-translate-up">
                     <p class="h5">核心价值</p>
@@ -141,7 +141,7 @@
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="#" class="d-block p-4 border hover-unstyled hover-bg-primary">
                   <div class="mb-4" style="min-height: 56px;">
-                    <img class="hover-fade-out" src="<% process.env.PUBLIC_PATH %>/icon/about-icon-2.svg" alt="">
+                    <img class="hover-fade-out" src="<%= process.env.IMAGE_PATH %>icon/about-icon-2.svg" alt="">
                   </div>
                   <div class="hover-translate-up">
                     <p class="h5">企业精神</p>
@@ -153,7 +153,7 @@
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="#" class="d-block p-4 border hover-unstyled hover-bg-primary">
                   <div class="mb-4" style="min-height: 56px;">
-                    <img class="hover-fade-out" src="<% process.env.PUBLIC_PATH %>/icon/about-icon-3.svg" alt="">
+                    <img class="hover-fade-out" src="<%= process.env.IMAGE_PATH %>icon/about-icon-3.svg" alt="">
                   </div>
                   <div class="hover-translate-up">
                     <p class="h5">企业使命</p>
@@ -165,7 +165,7 @@
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="#" class="d-block p-4 border hover-unstyled hover-bg-primary">
                   <div class="mb-4" style="min-height: 56px;">
-                    <img class="hover-fade-out" src="<% process.env.PUBLIC_PATH %>/icon/about-icon-4.svg" alt="">
+                    <img class="hover-fade-out" src="<%= process.env.IMAGE_PATH %>icon/about-icon-4.svg" alt="">
                   </div>
                   <div class="hover-translate-up">
                     <p class="h5">企业愿景</p>
@@ -177,7 +177,7 @@
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="#" class="d-block p-4 border hover-unstyled hover-bg-primary">
                   <div class="mb-4" style="min-height: 56px;">
-                    <img class="hover-fade-out" src="<% process.env.PUBLIC_PATH %>/icon/about-icon-5.svg" alt="">
+                    <img class="hover-fade-out" src="<%= process.env.IMAGE_PATH %>icon/about-icon-5.svg" alt="">
                   </div>
                   <div class="hover-translate-up">
                     <p class="h5">战略目标</p>
@@ -189,7 +189,7 @@
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="#" class="d-block p-4 border hover-unstyled hover-bg-primary">
                   <div class="mb-4" style="min-height: 56px;">
-                    <img class="hover-fade-out" src="<% process.env.PUBLIC_PATH %>/icon/about-icon-6.svg" alt="">
+                    <img class="hover-fade-out" src="<%= process.env.IMAGE_PATH %>icon/about-icon-6.svg" alt="">
                   </div>
                   <div class="hover-translate-up">
                     <p class="h5">经营理念</p>
@@ -201,7 +201,7 @@
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="#" class="d-block p-4 border hover-unstyled hover-bg-primary">
                   <div class="mb-4" style="min-height: 56px;">
-                    <img class="hover-fade-out" src="<% process.env.PUBLIC_PATH %>/icon/about-icon-7.svg" alt="">
+                    <img class="hover-fade-out" src="<%= process.env.IMAGE_PATH %>icon/about-icon-7.svg" alt="">
                   </div>
                   <div class="hover-translate-up">
                     <p class="h5">人才理念</p>
@@ -213,7 +213,7 @@
               <div class="col-lg-3 col-md-6 py-3">
                 <a href="#" class="d-block p-4 border hover-unstyled hover-bg-primary">
                   <div class="mb-4" style="min-height: 56px;">
-                    <img class="hover-fade-out" src="<% process.env.PUBLIC_PATH %>/icon/about-icon-8.svg" alt="">
+                    <img class="hover-fade-out" src="<%= process.env.IMAGE_PATH %>icon/about-icon-8.svg" alt="">
                   </div>
                   <div class="hover-translate-up">
                     <p class="h5">宣传口号</p>
@@ -226,7 +226,7 @@
           </div>
           <div class="tab-pane fade" id="about-nav-4" role="tabpanel" aria-labelledby="about-nav-4-tab">
             <div class="text-center">
-              <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/about-image-2.svg" alt="">
+              <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-2.svg" alt="">
             </div>
           </div>
           <div class="tab-pane fade" id="about-nav-5" role="tabpanel" aria-labelledby="about-nav-5-tab">
@@ -245,49 +245,49 @@
             <div class="row text-center mb-5">
               <div class="col-lg-3 col-md-6 py-3">
                 <div class="mb-3" style="min-height: 226px;">
-                  <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/about-image-11.png" alt="">
+                  <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-11.png" alt="">
                 </div>
                 <p class="small">广东省装饰行业知名品牌</p>
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <div class="mb-3" style="min-height: 226px;">
-                  <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/about-image-12.png" alt="">
+                  <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-12.png" alt="">
                 </div>
                 <p class="small">广东省装饰行业知名品牌</p>
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <div class="mb-3" style="min-height: 226px;">
-                  <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/about-image-3.png" alt="">
+                  <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-3.png" alt="">
                 </div>
                 <p class="small">广东省装饰行业知名品牌</p>
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <div class="mb-3" style="min-height: 226px;">
-                  <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/about-image-4.png" alt="">
+                  <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-4.png" alt="">
                 </div>
                 <p class="small">广东省装饰行业知名品牌</p>
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <div class="mb-3" style="min-height: 226px;">
-                  <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/about-image-5.png" alt="">
+                  <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-5.png" alt="">
                 </div>
                 <p class="small">广东省装饰行业知名品牌</p>
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <div class="mb-3" style="min-height: 226px;">
-                  <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/about-image-6.png" alt="">
+                  <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-6.png" alt="">
                 </div>
                 <p class="small">广东省装饰行业知名品牌</p>
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <div class="mb-3" style="min-height: 226px;">
-                  <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/about-image-7.png" alt="">
+                  <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-7.png" alt="">
                 </div>
                 <p class="small">广东省装饰行业知名品牌</p>
               </div>
               <div class="col-lg-3 col-md-6 py-3">
                 <div class="mb-3" style="min-height: 226px;">
-                  <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/about-image-8.png" alt="">
+                  <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-8.png" alt="">
                 </div>
                 <p class="small">广东省装饰行业知名品牌</p>
               </div>
@@ -296,32 +296,32 @@
               <div class="col-lg-10">
                 <div id="slick-about-honor">
                   <div>
-                    <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/about-image-13.png" alt="">
+                    <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-13.png" alt="">
                   </div>
                   <div>
-                    <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/about-image-13.png" alt="">
+                    <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-13.png" alt="">
                   </div>
                   <div>
-                    <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/about-image-13.png" alt="">
+                    <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-13.png" alt="">
                   </div>
                   <div>
-                    <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/about-image-13.png" alt="">
+                    <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-13.png" alt="">
                   </div>
                 </div>
               </div>
               <div class="col-lg-2 d-none d-lg-block">
                 <div id="slick-about-honor-nav">
                   <div>
-                    <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/about-image-3.png" alt="">
+                    <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-3.png" alt="">
                   </div>
                   <div>
-                    <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/about-image-4.png" alt="">
+                    <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-4.png" alt="">
                   </div>
                   <div>
-                    <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/about-image-5.png" alt="">
+                    <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-5.png" alt="">
                   </div>
                   <div>
-                    <img class="img-fluid" src="<% process.env.PUBLIC_PATH %>/images/about-image-6.png" alt="">
+                    <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-6.png" alt="">
                   </div>
                 </div>
               </div>
@@ -352,7 +352,7 @@
         </div>
       </div>
     </section>
-    <%= require('html-loader!../common/footer.html') %>
+    <%= require('html-loader!../common/footer.ejs') %>
   </body>
 </html>
 <script type="text/javascript">
@@ -367,8 +367,8 @@ $('#about-nav-tab a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
   if(!slick_about_honor_true){
     slick_about_honor_true = true
     $('#slick-about-honor').slick({
-      prevArrow: '<button type="button" class="slick-prev"><img src="<% process.env.PUBLIC_PATH %>/icon/slick-left.svg"/></button>',
-      nextArrow: '<button type="button" class="slick-next"><img src="<% process.env.PUBLIC_PATH %>/icon/slick-right.svg"/></button>',
+      prevArrow: '<button type="button" class="slick-prev"><img src="<%= process.env.IMAGE_PATH %>icon/slick-left.svg"/></button>',
+      nextArrow: '<button type="button" class="slick-next"><img src="<%= process.env.IMAGE_PATH %>icon/slick-right.svg"/></button>',
       fade: true,
       autoplay: true,
       asNavFor: '#slick-about-honor-nav',
