@@ -4,6 +4,7 @@ import 'slick-carousel';
 import $ from 'jquery';
 import { CountUp } from 'countup.js';
 import { throttle, debounce } from 'throttle-debounce';
+import 'social-share.js/dist/js/social-share.min.js';
 
 // countup
 (function myCountUp(){
@@ -30,6 +31,15 @@ import { throttle, debounce } from 'throttle-debounce';
     }
     window.addEventListener('scroll', throttle(500,window._scrollHandle))
   }
-})()
+})();
+
+(function () {
+  if($('[data-toggle="tab"]').length > 0){
+    $(window.location.hash).tab('show')
+    $(window).on('hashchange', function(){
+      $(window.location.hash).tab('show')
+    })
+  }
+})();
 
 window.$ = $

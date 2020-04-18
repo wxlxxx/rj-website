@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>瑞建</title>
+  </head>
+  <body>
+    <%= require('html-loader!../common/header.ejs') %>
+    <section class="py-5">
+      <div class="container py-lg-4">
+        <div class="row">
+          <div class="col-lg-4 pr-5">
+            <h4>专访：建筑作为一种呈现的媒介</h4>
+            <hr class="mb-4" />
+            <ul class="list-unstyled small">
+              <li class="mb-3">来源：家居行业资讯</li>
+              <li class="mb-3">作者:  瑞建建设</li>
+              <li class="mb-3">发布时间 : 2020年10月20日</li>
+              <li class="mb-3">浏览次数 : 2365次</li>
+            </ul>
+          </div>
+          <div class="col-lg-8">
+            <article>
+              <p>民生美术馆是基于一个80 年代的工业建筑改造而成。它以开放性、多元性、灵活性，对今天美术馆的封闭性、单一性及固定性提出了挑战，将会成为中国当代艺术的最大的公共平台</p>
+              <p>Minsheng Contemporary Art Museum is a renovation of an old factory from the 1980s. Its openness, diversity, flexibility make it different from typical galleries, which are always monotonous and secluded. It will be the largest public dedicated exhibition space for Chinese contemporary art.</p>
+              <img src="<%= process.env.IMAGE_PATH %>images/news-image-2.png" alt="">
+              <p>经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研究，集体讨论。经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研究，集体讨论。经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。</p>
+              <img src="<%= process.env.IMAGE_PATH %>images/news-image-3.png" alt="">
+              <p>快速的城市化，不仅为我们创造了物质文明的遗产，也为我们身后制造了大量的废弃物。我们喜新厌旧的心理，让众多老建筑遭到遗弃。798 地区的松下显像管厂已不再有过去近30 年的辉煌，遍体鳞伤，满目疮痍，虽然破旧，不美，但却透出工业建筑的粗犷，质朴与真实。这些特征恰和当代艺术的的态度不谋而合。民生现代美术馆的想法正是在这种基础上诞生，它尊重工业建筑朴素，真实的特质，顺势而为，无用之用，直指当代艺术空间的未来，挑战传统美术馆的冠冕堂皇。</p>
+            </article>
+            <div class="d-flex justify-content-end py-4">
+              <div class="social-share" data-sites="wechat,qzone,qq,weibo"></div>
+            </div>
+            <div class="border-top py-lg-5 py-4">
+              <a href="#" class="btn btn-secondary mr-lg-4">上一篇</a>
+              <a href="#" class="btn btn-primary">下一篇</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <%= require('html-loader!../common/footer.ejs') %>
+  </body>
+</html>
