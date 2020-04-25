@@ -8,11 +8,14 @@
   </head>
   <body>
     <%= require('html-loader!../common/header.ejs') %>
-    <section style="background:url(<%= process.env.IMAGE_PATH %>images/contact-banner.png) center no-repeat;height: 500px;max-height: 60vh;background-size: cover;">
+    <section class="bannerHeight" style="background:url(<%= process.env.IMAGE_PATH %>images/contact-banner.png) center no-repeat;background-size: cover;">
+      <div class="container h-100 d-flex align-items-center">
+        <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/contact-banner-2.svg" alt="">
+      </div>
     </section>
     <section class="py-5" id="service-list">
       <div class="container">
-        <nav aria-label="breadcrumb">
+        <nav aria-label="breadcrumb" class="small">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">首页</a></li>
             <li class="breadcrumb-item"><a href="#">联系我们</a></li>
@@ -24,7 +27,7 @@
           <div class="col-lg-3 col-md-6 py-3">
             <a href="#" class="d-block p-4 border hover-unstyled hover-bg-primary">
               <div class="mb-4" style="min-height: 56px;">
-                <img class="hover-fade-out" src="<%= process.env.IMAGE_PATH %>icon/contact-icon-1.svg" alt="">
+                <img loading="lazy" class="hover-fade-out" src="<%= process.env.IMAGE_PATH %>icon/contact-icon-1.svg" alt="">
               </div>
               <div class="hover-translate-up">
                 <p class="h5">电话</p>
@@ -36,7 +39,7 @@
           <div class="col-lg-3 col-md-6 py-3">
             <a href="#" class="d-block p-4 border hover-unstyled hover-bg-primary">
               <div class="mb-4" style="min-height: 56px;">
-                <img class="hover-fade-out" src="<%= process.env.IMAGE_PATH %>icon/contact-icon-2.svg" alt="">
+                <img loading="lazy" class="hover-fade-out" src="<%= process.env.IMAGE_PATH %>icon/contact-icon-2.svg" alt="">
               </div>
               <div class="hover-translate-up">
                 <p class="h5">传真</p>
@@ -48,7 +51,7 @@
           <div class="col-lg-3 col-md-6 py-3">
             <a href="#" class="d-block p-4 border hover-unstyled hover-bg-primary">
               <div class="mb-4" style="min-height: 56px;">
-                <img class="hover-fade-out" src="<%= process.env.IMAGE_PATH %>icon/contact-icon-3.svg" alt="">
+                <img loading="lazy" class="hover-fade-out" src="<%= process.env.IMAGE_PATH %>icon/contact-icon-3.svg" alt="">
               </div>
               <div class="hover-translate-up">
                 <p class="h5">邮箱</p>
@@ -60,7 +63,7 @@
           <div class="col-lg-3 col-md-6 py-3">
             <a href="#" class="d-block p-4 border hover-unstyled hover-bg-primary">
               <div class="mb-4" style="min-height: 56px;">
-                <img class="hover-fade-out" src="<%= process.env.IMAGE_PATH %>icon/contact-icon-4.svg" alt="">
+                <img loading="lazy" class="hover-fade-out" src="<%= process.env.IMAGE_PATH %>icon/contact-icon-4.svg" alt="">
               </div>
               <div class="hover-translate-up">
                 <p class="h5">地址</p>
@@ -73,66 +76,25 @@
       </div>
     </section>
     <section>
-      <div class="container-fluid">
+      <div class="container">
         <div id="bd-map" style="height: 60vh;"></div>
       </div>
     </section>
     <section class="py-5">
       <div class="container py-lg-4">
-        <div class="d-flex mb-5 align-items-end">
-          <p class="h5 mb-0">联系我们</p>
+        <div class="d-flex flex-column flex-lg-row mb-lg-5 mb-4 align-items-lg-end text-center text-lg-left">
+          <p class="h5 mb-lg-0">联系我们</p>
           <p class="text-gray small mb-0">（如果您对我们有什么建议、投诉、需求，可以在此留言告诉我们，我们会在第一时间了解并及时与您联系。）​​​</p>
         </div>
-        <form class="text-left">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="姓名" required="" />
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="form-group">
-                <input type="email" class="form-control" placeholder="邮箱" required="" />
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="电话" required="" />
-              </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <textarea class="form-control" rows="3" placeholder="内容"></textarea>
-          </div>
-          <div class="text-center pt-4">
-            <button type="submit" onclick="$('#modal-submit-success').modal()" class="btn btn-primary">Submit</button>
-          </div>
-        </form>
+        <%= require('html-loader!../common/content-contact-us.ejs') %>
       </div>
     </section>
-    <div class="modal" id="modal-submit-success" tabindex="-1" role="dialog">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content text-center">
-          <div class="modal-header pb-0 border-0">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body pb-5">
-            <img class="mb-4" src="<%= process.env.IMAGE_PATH %>icon/success.svg" alt="">
-            <h4 class="mb-4">提交成功</h4>
-            <p class="small text-muted mb-4">感谢您与我们联系, 我们将在收到消息后第一时间给予您回复！</p>
-            <button type="button" class="btn btn-secondary">确定</button>
-          </div>
-        </div>
-      </div>
-    </div>
     <%= require('html-loader!../common/footer.ejs') %>
   </body>
 </html>
 <script type="text/javascript">
 var map = new BMapGL.Map("bd-map");
-var point = new BMapGL.Point(116.404, 39.915);
+var point = new BMapGL.Point(114.102414,22.549747);
 map.centerAndZoom(point, 15);
 var opts = {
     width: 250,

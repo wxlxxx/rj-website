@@ -9,7 +9,7 @@
     <%= require('html-loader!../common/header.ejs') %>
     <section class="py-4">
       <div class="container">
-        <nav aria-label="breadcrumb">
+        <nav aria-label="breadcrumb" class="small">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">首页</a></li>
             <li class="breadcrumb-item"><a href="#">最新案例</a></li>
@@ -19,33 +19,33 @@
       </div>
     </section>
     <section>
-      <div class="container-fluid">
+      <div class="container">
         <div class="row no-gutters">
           <div class="col-lg-10">
-            <div id="slick-banner">
+            <div id="slick-case-banner">
               <div>
-                <div style="background-image:url(<%= process.env.IMAGE_PATH %>images/case-banner-1.png);background-size:cover;background-position:center;"></div>
+                <div style="background-image:url(<%= process.env.IMAGE_PATH %>images/home-image-1.png);background-size:cover;background-position:center;"></div>
               </div>
               <div>
-                <div style="background-image:url(<%= process.env.IMAGE_PATH %>images/case-banner-2.png);background-size:cover;background-position:center;"></div>
+                <div style="background-image:url(<%= process.env.IMAGE_PATH %>images/home-image-2.png);background-size:cover;background-position:center;"></div>
               </div>
               <div>
-                <div style="background-image:url(<%= process.env.IMAGE_PATH %>images/case-banner-1.png);background-size:cover;background-position:center;"></div>
+                <div style="background-image:url(<%= process.env.IMAGE_PATH %>images/home-image-3.png);background-size:cover;background-position:center;"></div>
               </div>
               <div>
-                <div style="background-image:url(<%= process.env.IMAGE_PATH %>images/case-banner-2.png);background-size:cover;background-position:center;"></div>
+                <div style="background-image:url(<%= process.env.IMAGE_PATH %>images/home-image-4.png);background-size:cover;background-position:center;"></div>
               </div>
             </div>
           </div>
           <div class="col-lg-2 d-none d-lg-block">
-            <div id="slick-nav">
-              <div style="background-image:url(<%= process.env.IMAGE_PATH %>images/case-banner-1.png);background-size:cover;height: 146px;">
+            <div id="slick-case-nav">
+              <div style="background-image:url(<%= process.env.IMAGE_PATH %>images/home-image-1.png);background-size:cover;height: 146px;">
               </div>
-              <div style="background-image:url(<%= process.env.IMAGE_PATH %>images/case-banner-2.png);background-size:cover;height: 146px;">
+              <div style="background-image:url(<%= process.env.IMAGE_PATH %>images/home-image-2.png);background-size:cover;height: 146px;">
               </div>
-              <div style="background-image:url(<%= process.env.IMAGE_PATH %>images/case-banner-1.png);background-size:cover;height: 146px;">
+              <div style="background-image:url(<%= process.env.IMAGE_PATH %>images/home-image-3.png);background-size:cover;height: 146px;">
               </div>
-              <div style="background-image:url(<%= process.env.IMAGE_PATH %>images/case-banner-2.png);background-size:cover;height: 146px;">
+              <div style="background-image:url(<%= process.env.IMAGE_PATH %>images/home-image-4.png);background-size:cover;height: 146px;">
               </div>
             </div>
           </div>
@@ -62,11 +62,11 @@
           <p class="text-uppercase mb-5">Commercial space</p>
           <div class="row">
             <div class="col-lg-3">
-              <p>项目概况</p>
+              <p class="font-weight-bold">项目概况</p>
               <div class="bg-gray my-4" style="height: 1px;">
                 <div class="bg-secondary h-100" style="width: 66px;"></div>
               </div>
-              <ul class="list-unstyled p-0 text-muted">
+              <ul class="list-unstyled p-0 text-muted small">
                 <li class="mb-4">客户/client :&nbsp&nbsp&nbsp&nbsp&nbsp亮眸眼镜 </li>
                 <li class="mb-4">项目地点/location :&nbsp&nbsp&nbsp&nbsp&nbsp深圳 宝安</li>
                 <li class="mb-4">项目面积/space :&nbsp&nbsp&nbsp&nbsp&nbsp3000平米</li>
@@ -75,12 +75,12 @@
               </ul>
             </div>
             <div class="col-lg-9">
-              <p>项目详情</p>
+              <p class="font-weight-bold">项目详情</p>
               <div class="bg-gray my-4" style="height: 1px;">
                 <div class="bg-secondary h-100" style="width: 66px;"></div>
               </div>
-              <p class="text-muted mb-5" style="line-height: 28px;">经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研究，集体讨论。经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研究，集体讨论。经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研究，集体讨论。经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研究，集体讨论。经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研究，集体讨论。经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。</p>
-              <a href="#" class="btn btn-secondary">返回</a>
+              <p class="text-muted mb-5 small" style="line-height: 2;">经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研究，集体讨论。经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研究，集体讨论。经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研究，集体讨论。经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研究，集体讨论。经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研究，集体讨论。经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。</p>
+              <a href="/case.html" class="btn btn-secondary">返回</a>
             </div>
           </div>
         </div>
@@ -90,9 +90,9 @@
   </body>
 </html>
 <script type="text/javascript">
-  $('#slick-banner').slick({
-    prevArrow: '<button type="button" class="slick-prev"><img src="<%= process.env.IMAGE_PATH %>icon/slick-left.svg"/></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="<%= process.env.IMAGE_PATH %>icon/slick-right.svg"/></button>',
+  $('#slick-case-banner').slick({
+    prevArrow: '<button type="button" class="slick-prev"><img loading="lazy" src="<%= process.env.IMAGE_PATH %>icon/slick-left.svg"/></button>',
+    nextArrow: '<button type="button" class="slick-next"><img loading="lazy" src="<%= process.env.IMAGE_PATH %>icon/slick-right.svg"/></button>',
     fade: true,
     autoplay: true,
     asNavFor: '#slick-nav',
@@ -105,7 +105,7 @@
       }
     ]
   })
-  $('#slick-nav').slick({
+  $('#slick-case-nav').slick({
     vertical: true,
     slidesToShow: 4,
     slidesToScroll: 1,

@@ -7,16 +7,14 @@
   </head>
   <body>
     <%= require('html-loader!../common/header.ejs') %>
-    <section style="background:url(<%= process.env.IMAGE_PATH %>images/service-banner-1.png) center no-repeat;height: 500px;max-height: 50vh;background-size: cover;">
-      <div class="container h-100">
-        <div class="d-flex align-items-center justify-content-center h-100">
-          <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/service-banner-2.svg" alt="">
-        </div>
+    <section class="bannerHeight" style="background:url(<%= process.env.IMAGE_PATH %>images/service-banner-1.png) center no-repeat;background-size: cover;">
+      <div class="container h-100 d-flex align-items-center">
+        <img loading="lazy" class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/service-banner-2.svg" alt="">
       </div>
     </section>
     <section class="py-5" id="service-list">
       <div class="container">
-        <nav aria-label="breadcrumb">
+        <nav aria-label="breadcrumb" class="small">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">首页</a></li>
             <li class="breadcrumb-item"><a href="#">瑞建简介</a></li>
@@ -26,73 +24,73 @@
         <hr class="mb-5"/>
         <div class="d-flex" id="a1">
           <div class="pr-4 pr-lg-5">
-            <img src="<%= process.env.IMAGE_PATH %>icon/home-icon-1.svg" alt="">
+            <img loading="lazy" src="<%= process.env.IMAGE_PATH %>icon/home-icon-1.svg" alt="">
           </div>
           <div class="flex-auto">
             <p class="h5">建筑装饰</p>
             <p class="text-gray small mb-4 text-uppercase">architectural ornament</p>
             <p class="text-muted small mb-4">可承担各类建筑装饰装修工程，以及与装修工程直接配套的其他工程的施工，可从事资质证书许可范围内相应的建设工程总承包业务以及项目管理和相关的技术与管理服务。建筑装饰是为保护建筑物的主体结构、完善建筑物的物理性能、使用功能和美化建筑物，采用装饰装修材料或饰物对建筑物的内外表面及空间进行的各种处理过程。</p>
-            <a href="#" class="btn btn-primary more">查看案例</a>
+            <a href="/service.html#a1" class="btn btn-primary more">查看案例</a>
           </div>
         </div>
         <hr class="my-5"/>
         <div class="d-flex" id="a2">
           <div class="pr-4 pr-lg-5">
-            <img src="<%= process.env.IMAGE_PATH %>icon/home-icon-2.svg" alt="">
+            <img loading="lazy" src="<%= process.env.IMAGE_PATH %>icon/home-icon-2.svg" alt="">
           </div>
           <div class="flex-auto">
             <p class="h5">工程设计</p>
             <p class="text-gray small mb-4 text-uppercase">engineering project</p>
             <p class="text-muted small mb-4">可承担各类建筑装饰装修工程，以及与装修工程直接配套的其他工程的施工，可从事资质证书许可范围内相应的建设工程总承包业务以及项目管理和相关的技术与管理服务。建筑装饰是为保护建筑物的主体结构、完善建筑物的物理性能、使用功能和美化建筑物，采用装饰装修材料或饰物对建筑物的内外表面及空间进行的各种处理过程。</p>
-            <a href="#" class="btn btn-primary more">查看案例</a>
+            <a href="/service.html#a2" class="btn btn-primary more">查看案例</a>
           </div>
         </div>
         <hr class="my-5"/>
         <div class="d-flex" id="a3">
           <div class="pr-4 pr-lg-5">
-            <img src="<%= process.env.IMAGE_PATH %>icon/home-icon-3.svg" alt="">
+            <img loading="lazy" src="<%= process.env.IMAGE_PATH %>icon/home-icon-3.svg" alt="">
           </div>
           <div class="flex-auto">
             <p class="h5">建筑幕墙</p>
             <p class="text-gray small mb-4 text-uppercase">Architectural curtain wall</p>
             <p class="text-muted small mb-4">可承担各类建筑装饰装修工程，以及与装修工程直接配套的其他工程的施工，可从事资质证书许可范围内相应的建设工程总承包业务以及项目管理和相关的技术与管理服务。建筑装饰是为保护建筑物的主体结构、完善建筑物的物理性能、使用功能和美化建筑物，采用装饰装修材料或饰物对建筑物的内外表面及空间进行的各种处理过程。</p>
-            <a href="#" class="btn btn-primary more">查看案例</a>
+            <a href="/service.html#a3" class="btn btn-primary more">查看案例</a>
           </div>
         </div>
         <hr class="my-5"/>
         <div class="d-flex" id="a4">
           <div class="pr-4 pr-lg-5">
-            <img src="<%= process.env.IMAGE_PATH %>icon/home-icon-4.svg" alt="">
+            <img loading="lazy" src="<%= process.env.IMAGE_PATH %>icon/home-icon-4.svg" alt="">
           </div>
           <div class="flex-auto">
             <p class="h5">市政工程</p>
             <p class="text-gray small mb-4 text-uppercase">municipal engineering</p>
             <p class="text-muted small mb-4">可承担各类建筑装饰装修工程，以及与装修工程直接配套的其他工程的施工，可从事资质证书许可范围内相应的建设工程总承包业务以及项目管理和相关的技术与管理服务。建筑装饰是为保护建筑物的主体结构、完善建筑物的物理性能、使用功能和美化建筑物，采用装饰装修材料或饰物对建筑物的内外表面及空间进行的各种处理过程。</p>
-            <a href="#" class="btn btn-primary more">查看案例</a>
+            <a href="/service.html#a4" class="btn btn-primary more">查看案例</a>
           </div>
         </div>
         <hr class="my-5"/>
         <div class="d-flex" id="a5">
           <div class="pr-4 pr-lg-5">
-            <img src="<%= process.env.IMAGE_PATH %>icon/home-icon-7.svg" alt="">
+            <img loading="lazy" src="<%= process.env.IMAGE_PATH %>icon/home-icon-7.svg" alt="">
           </div>
           <div class="flex-auto">
             <p class="h5">机电工程</p>
             <p class="text-gray small mb-4 text-uppercase">Mechatronics Engineering</p>
             <p class="text-muted small mb-4">可承担各类建筑装饰装修工程，以及与装修工程直接配套的其他工程的施工，可从事资质证书许可范围内相应的建设工程总承包业务以及项目管理和相关的技术与管理服务。建筑装饰是为保护建筑物的主体结构、完善建筑物的物理性能、使用功能和美化建筑物，采用装饰装修材料或饰物对建筑物的内外表面及空间进行的各种处理过程。</p>
-            <a href="#" class="btn btn-primary more">查看案例</a>
+            <a href="/service.html#a5" class="btn btn-primary more">查看案例</a>
           </div>
         </div>
         <hr class="my-5"/>
         <div class="d-flex" id="a6">
           <div class="pr-4 pr-lg-5">
-            <img src="<%= process.env.IMAGE_PATH %>icon/home-icon-8.svg" alt="">
+            <img loading="lazy" src="<%= process.env.IMAGE_PATH %>icon/home-icon-8.svg" alt="">
           </div>
           <div class="flex-auto">
             <p class="h5">钢结构工程</p>
             <p class="text-gray small mb-4 text-uppercase">structural steelwork</p>
             <p class="text-muted small mb-4">可承担各类建筑装饰装修工程，以及与装修工程直接配套的其他工程的施工，可从事资质证书许可范围内相应的建设工程总承包业务以及项目管理和相关的技术与管理服务。建筑装饰是为保护建筑物的主体结构、完善建筑物的物理性能、使用功能和美化建筑物，采用装饰装修材料或饰物对建筑物的内外表面及空间进行的各种处理过程。</p>
-            <a href="#" class="btn btn-primary more">查看案例</a>
+            <a href="/service.html#a6" class="btn btn-primary more">查看案例</a>
           </div>
         </div>
       </div>

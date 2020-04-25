@@ -7,40 +7,43 @@
   </head>
   <body>
     <%= require('html-loader!../common/header.ejs') %>
-    <section class="d-flex align-items-end" style="background:url(<%= process.env.IMAGE_PATH %>images/about-banner.png) top no-repeat;background-size: auto 100%;height: 500px;max-height: 80vh;">
-      <div class="container">
-        <nav>
-          <div class="nav nav-tabs" id="about-nav-tab" role="tablist">
-            <a class="nav-item nav-link active" id="about-nav-1-tab" data-toggle="tab" href="#about-nav-1" role="tab" aria-controls="about-nav-1" aria-selected="true">瑞建简介</a>
-            <a class="nav-item nav-link" id="about-nav-2-tab" data-toggle="tab" href="#about-nav-2" role="tab" aria-controls="about-nav-2" aria-selected="false">董事长致辞</a>
-            <a class="nav-item nav-link" id="about-nav-3-tab" data-toggle="tab" href="#about-nav-3" role="tab" aria-controls="about-nav-3" aria-selected="false">企业文化</a>
-            <a class="nav-item nav-link" id="about-nav-4-tab" data-toggle="tab" href="#about-nav-4" role="tab" aria-controls="about-nav-4" aria-selected="false">管理构架</a>
-            <a class="nav-item nav-link" id="about-nav-5-tab" data-toggle="tab" href="#about-nav-5" role="tab" aria-controls="about-nav-5" aria-selected="false">资质荣誉</a>
+    <section class="bannerHeight" style="background:url(<%= process.env.IMAGE_PATH %>images/about-banner.png) top no-repeat;background-size: cover;">
+      <div class="container h-100 d-flex align-items-end position-relative">
+        <div class="px-3 position-absolute" style="left:0;top:30%;">
+          <img loading="lazy" class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-banner-2.svg" alt="">
+        </div>
+        <nav class="w-100">
+          <div class="nav nav-tabs flex-nowrap" id="about-nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="about-nav-1-tab" data-toggle="tab" href="#about-nav-1" role="tab" aria-controls="about-nav-1" aria-selected="true">瑞建<br class="d-lg-none">简介</a>
+            <a class="nav-item nav-link" id="about-nav-2-tab" data-toggle="tab" href="#about-nav-2" role="tab" aria-controls="about-nav-2" aria-selected="false">董事长<br class="d-lg-none">致辞</a>
+            <a class="nav-item nav-link" id="about-nav-3-tab" data-toggle="tab" href="#about-nav-3" role="tab" aria-controls="about-nav-3" aria-selected="false">企业<br class="d-lg-none">文化</a>
+            <a class="nav-item nav-link" id="about-nav-4-tab" data-toggle="tab" href="#about-nav-4" role="tab" aria-controls="about-nav-4" aria-selected="false">管理<br class="d-lg-none">构架</a>
+            <a class="nav-item nav-link" id="about-nav-5-tab" data-toggle="tab" href="#about-nav-5" role="tab" aria-controls="about-nav-5" aria-selected="false">资质<br class="d-lg-none">荣誉</a>
           </div>
         </nav>
       </div>
     </section>
     <section class="py-5">
-      <div class="container py-lg-4">
-        <div class="tab-content pt-5 pt-lg-0" id="about-nav-tabContent">
-          <div class="tab-pane fade show active" id="about-nav-1" role="tabpanel" aria-labelledby="about-nav-1-tab">
-            <nav aria-label="breadcrumb">
+      <div class="tab-content pt-5 pt-lg-0" id="about-nav-tabContent">
+        <div class="tab-pane fade show active" id="about-nav-1" role="tabpanel" aria-labelledby="about-nav-1-tab">
+          <div class="container py-lg-4">
+            <nav aria-label="breadcrumb" class="small">
               <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">首页</a></li>
-                <li class="breadcrumb-item"><a href="#">瑞建简介</a></li>
+                <li class="breadcrumb-item"><a href="javascript:;">首页</a></li>
+                <li class="breadcrumb-item"><a href="javascript:;">瑞建简介</a></li>
                 <li class="breadcrumb-item active" aria-current="page">深圳市瑞建建设集团有限公司简介</li>
               </ol>
             </nav>
             <hr class="mb-5"/>
-            <div class="row">
+            <div class="row mb-5">
               <div class="col-lg-6 py-3">
-                <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-1.png" alt="">
+                <img loading="lazy" class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-1.png" alt="">
               </div>
               <div class="col-lg-6 py-3">
                 <div class="mb-4">
-                  <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/logo-horizontal.svg" alt="">
+                  <img loading="lazy" class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/logo-horizontal.svg" alt="">
                 </div>
-                <div class="text-muted" style="line-height: 28px;">
+                <div class="text-muted small" style="line-height: 28px;">
                   <p>深圳市瑞建建设集团有限公司成立于2008年。注册资金10180万元。</p>
                   <p>设计甲级,施工一级,拥有独立设计团队,坚持无创意不设计,以设计创意为核心目标引导施工项目，提供一站式设计服务,让您尊享专业设计团队的高品质保障。</p>
                   <p>设计团队20多人，工程技术人员40多人，施工团队50多个，施工技术人员达到500多人，我们一直以追求卓越品质为核心，以人为本，高质量完成客户的要求。</p>
@@ -50,56 +53,78 @@
                 </div>
               </div>
             </div>
-            <div class="bg-gray py-5">
-              <div class="container py-lg-4">
-                <div class="row">
-                  <div class="col-lg-3 col-md-6 py-3">
-                    <a href="#" class="hover-unstyled d-block">
-                      <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-1.png);"></div>
-                      <p class="h5 mb-0">企业使命</p>
-                      <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
-                      <p class="text-gray small hover-translate-up">品质  成功之轮</p>
-                    </a>
-                  </div>
-                  <div class="col-lg-3 col-md-6 py-3">
-                    <a href="#" class="hover-unstyled d-block">
-                      <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-2.png);"></div>
-                      <p class="h5 mb-0">企业愿景</p>
-                      <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
-                      <p class="text-gray small hover-translate-up">最具国际竞争力的建筑装饰装修工程、园林绿化工程、机电安装工程，设计与施工综合性企业。</p>
-                    </a>
-                  </div>
-                  <div class="col-lg-3 col-md-6 py-3">
-                    <a href="#" class="hover-unstyled d-block">
-                      <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-3.png);"></div>
-                      <p class="h5 mb-0">核心价值</p>
-                      <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
-                      <p class="text-gray small hover-translate-up">品质保障 以人为本</p>
-                    </a>
-                  </div>
-                  <div class="col-lg-3 col-md-6 py-3">
-                    <a href="#" class="hover-unstyled d-block">
-                      <div class="background-image-cover mb-4" style="height: 280px;background-image: url(<%= process.env.IMAGE_PATH %>images/home-image-4.png);"></div>
-                      <p class="h5 mb-0">企业精神</p>
-                      <hr class="border-primary ml-0 hover-fade-out" style="width:20px;" />
-                      <p class="text-gray small hover-translate-up">诚信 创新 超越 共赢,共创美好未来。</p>
-                    </a>
-                  </div>
+          </div>
+          <div class="bg-gray py-5 text-center">
+            <div class="container py-lg-4">
+              <div class="row">
+                <div class="col-lg-3 col-md-6 py-3">
+                  <a href="javascript:;" class="d-block p-4 border hover-unstyled hover-bg-primary bg-white">
+                    <div class="mb-4" style="min-height: 56px;">
+                      <img loading="lazy" class="hover-hide" src="<%= process.env.IMAGE_PATH %>icon/about-icon-3.svg" alt="">
+                    </div>
+                    <div class="hover-translate-up">
+                      <p class="h5">企业使命</p>
+                      <div class="border-top border-primary mx-auto my-3" style="width: 24px;"></div>
+                      <p class="small text-gray text-uppercase hover-hide mb-0" style="min-height: 42px;">Enterprise mission</p>
+                      <p class="small text-white hover-show mb-0" style="min-height: 42px;">品质 成功之轮</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-3 col-md-6 py-3">
+                  <a href="javascript:;" class="d-block p-4 border hover-unstyled hover-bg-primary bg-white">
+                    <div class="mb-4" style="min-height: 56px;">
+                      <img loading="lazy" class="hover-hide" src="<%= process.env.IMAGE_PATH %>icon/about-icon-4.svg" alt="">
+                    </div>
+                    <div class="hover-translate-up">
+                      <p class="h5">企业愿景</p>
+                      <div class="border-top border-primary mx-auto my-3" style="width: 24px;"></div>
+                      <p class="small text-gray text-uppercase hover-hide mb-0" style="min-height: 42px;">Corporate vision</p>
+                      <p class="small text-white hover-show mb-0" style="min-height: 42px;">最具国际竞争力的<br/>设计与施工综合性企业</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-3 col-md-6 py-3">
+                  <a href="javascript:;" class="d-block p-4 border hover-unstyled hover-bg-primary bg-white">
+                    <div class="mb-4" style="min-height: 56px;">
+                      <img loading="lazy" class="hover-hide" src="<%= process.env.IMAGE_PATH %>icon/about-icon-11.svg" alt="">
+                    </div>
+                    <div class="hover-translate-up">
+                      <p class="h5">核心价值</p>
+                      <div class="border-top border-primary mx-auto my-3" style="width: 24px;"></div>
+                      <p class="small text-gray text-uppercase hover-hide mb-0" style="min-height: 42px;">core value</p>
+                      <p class="small text-white hover-show mb-0" style="min-height: 42px;">品质保障 以人为本</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-3 col-md-6 py-3">
+                  <a href="javascript:;" class="d-block p-4 border hover-unstyled hover-bg-primary bg-white">
+                    <div class="mb-4" style="min-height: 56px;">
+                      <img loading="lazy" class="hover-hide" src="<%= process.env.IMAGE_PATH %>icon/about-icon-2.svg" alt="">
+                    </div>
+                    <div class="hover-translate-up">
+                      <p class="h5">企业精神</p>
+                      <div class="border-top border-primary mx-auto my-3" style="width: 24px;"></div>
+                      <p class="small text-gray text-uppercase hover-hide mb-0" style="min-height: 42px;">Enterprise spirit</p>
+                      <p class="small text-white hover-show mb-0" style="min-height: 42px;">诚信 创新 超越 共赢<br/>共创美好未来</p>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="tab-pane fade" id="about-nav-2" role="tabpanel" aria-labelledby="about-nav-2-tab">
-            <nav aria-label="breadcrumb">
+        </div>
+        <div class="tab-pane fade" id="about-nav-2" role="tabpanel" aria-labelledby="about-nav-2-tab">
+          <div class="container py-lg-4">
+            <nav aria-label="breadcrumb" class="small">
               <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">首页</a></li>
-                <li class="breadcrumb-item"><a href="#">瑞建简介</a></li>
+                <li class="breadcrumb-item"><a href="javascript:;">首页</a></li>
+                <li class="breadcrumb-item"><a href="javascript:;">瑞建简介</a></li>
                 <li class="breadcrumb-item active" aria-current="page">董事长致辞</li>
               </ol>
             </nav>
             <hr class="mb-5"/>
-            <div>
-              <h4 class="mb-5 text-center">董事长致辞</h4>
+            <div class="container-lg small">
+              <h4 class="mb-5 text-center" style="line-height:2;">董事长致辞</h4>
               <p>民生美术馆是基于一个80 年代的工业建筑改造而成。它以开放性、多元性、灵活性，对今天美术馆的封闭性、单一性及固定性提出了挑战，将会成为中国当代艺术的最大的公共平台。</p>
               <p>Minsheng Contemporary Art Museum is a renovation of an old factory from the 1980s. Its openness, diversity, flexibility make it different from typical galleries, which are always monotonous and secluded. It will be the largest public dedicated exhibition space for Chinese contemporary art.</p>
               <p>经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研究，集体讨论。经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研究，集体讨论。经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。</p>
@@ -112,236 +137,245 @@
               <div class="d-flex justify-content-end align-items-center pt-5">
                 <p class="mb-0">瑞建集团董事长</p>
                 <div class="border-top border-primary mx-3" style="width:32px;"></div>
-                <img src="<%= process.env.IMAGE_PATH %>icon/sign.svg" alt="">
+                <img loading="lazy" src="<%= process.env.IMAGE_PATH %>icon/sign.svg" alt="">
               </div>
             </div>
           </div>
-          <div class="tab-pane fade" id="about-nav-3" role="tabpanel" aria-labelledby="about-nav-3-tab">
-            <nav aria-label="breadcrumb">
+        </div>
+        <div class="tab-pane fade" id="about-nav-3" role="tabpanel" aria-labelledby="about-nav-3-tab">
+          <div class="container py-lg-4">
+            <nav aria-label="breadcrumb" class="small">
               <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">首页</a></li>
-                <li class="breadcrumb-item"><a href="#">瑞建简介</a></li>
+                <li class="breadcrumb-item"><a href="javascript:;">首页</a></li>
+                <li class="breadcrumb-item"><a href="javascript:;">瑞建简介</a></li>
                 <li class="breadcrumb-item active" aria-current="page">深圳市瑞建建设集团有限公司简介</li>
               </ol>
             </nav>
             <hr class="mb-5"/>
             <div class="row text-center">
               <div class="col-lg-3 col-md-6 py-3">
-                <a href="#" class="d-block p-4 border hover-unstyled hover-bg-primary">
+                <a href="javascript:;" class="d-block p-4 border hover-unstyled hover-bg-primary">
                   <div class="mb-4" style="min-height: 56px;">
-                    <img class="hover-fade-out" src="<%= process.env.IMAGE_PATH %>icon/about-icon-2.svg" alt="">
+                    <img loading="lazy" class="hover-hide" src="<%= process.env.IMAGE_PATH %>icon/about-icon-11.svg" alt="">
                   </div>
                   <div class="hover-translate-up">
                     <p class="h5">核心价值</p>
                     <div class="border-top border-primary mx-auto my-3" style="width: 24px;"></div>
-                    <p class="small text-gray">品质保障 以人为本</p>
+                    <p class="small text-gray text-uppercase hover-hide mb-0" style="min-height: 42px;">core value</p>
+                    <p class="small text-white hover-show mb-0" style="min-height: 42px;">品质保障 以人为本</p>
                   </div>
                 </a>
               </div>
               <div class="col-lg-3 col-md-6 py-3">
-                <a href="#" class="d-block p-4 border hover-unstyled hover-bg-primary">
+                <a href="javascript:;" class="d-block p-4 border hover-unstyled hover-bg-primary">
                   <div class="mb-4" style="min-height: 56px;">
-                    <img class="hover-fade-out" src="<%= process.env.IMAGE_PATH %>icon/about-icon-2.svg" alt="">
+                    <img loading="lazy" class="hover-hide" src="<%= process.env.IMAGE_PATH %>icon/about-icon-2.svg" alt="">
                   </div>
                   <div class="hover-translate-up">
                     <p class="h5">企业精神</p>
                     <div class="border-top border-primary mx-auto my-3" style="width: 24px;"></div>
-                    <p class="small text-gray">Enterprise spirit</p>
+                    <p class="small text-gray text-uppercase hover-hide mb-0" style="min-height: 42px;">Enterprise spirit</p>
+                    <p class="small text-white hover-show mb-0" style="min-height: 42px;">诚信 创新 超越 共赢<br/>共创美好未来</p>
                   </div>
                 </a>
               </div>
               <div class="col-lg-3 col-md-6 py-3">
-                <a href="#" class="d-block p-4 border hover-unstyled hover-bg-primary">
+                <a href="javascript:;" class="d-block p-4 border hover-unstyled hover-bg-primary">
                   <div class="mb-4" style="min-height: 56px;">
-                    <img class="hover-fade-out" src="<%= process.env.IMAGE_PATH %>icon/about-icon-3.svg" alt="">
+                    <img loading="lazy" class="hover-hide" src="<%= process.env.IMAGE_PATH %>icon/about-icon-3.svg" alt="">
                   </div>
                   <div class="hover-translate-up">
                     <p class="h5">企业使命</p>
                     <div class="border-top border-primary mx-auto my-3" style="width: 24px;"></div>
-                    <p class="small text-gray">Enterprise mission</p>
+                    <p class="small text-gray text-uppercase hover-hide mb-0" style="min-height: 42px;">Enterprise mission</p>
+                    <p class="small text-white hover-show mb-0" style="min-height: 42px;">品质 成功之轮</p>
                   </div>
                 </a>
               </div>
               <div class="col-lg-3 col-md-6 py-3">
-                <a href="#" class="d-block p-4 border hover-unstyled hover-bg-primary">
+                <a href="javascript:;" class="d-block p-4 border hover-unstyled hover-bg-primary">
                   <div class="mb-4" style="min-height: 56px;">
-                    <img class="hover-fade-out" src="<%= process.env.IMAGE_PATH %>icon/about-icon-4.svg" alt="">
+                    <img loading="lazy" class="hover-hide" src="<%= process.env.IMAGE_PATH %>icon/about-icon-4.svg" alt="">
                   </div>
                   <div class="hover-translate-up">
                     <p class="h5">企业愿景</p>
                     <div class="border-top border-primary mx-auto my-3" style="width: 24px;"></div>
-                    <p class="small text-gray">Corporate vision</p>
+                    <p class="small text-gray text-uppercase hover-hide mb-0" style="min-height: 42px;">Corporate vision</p>
+                    <p class="small text-white hover-show mb-0" style="min-height: 42px;">最具国际竞争力的<br/>设计与施工综合性企业</p>
                   </div>
                 </a>
               </div>
               <div class="col-lg-3 col-md-6 py-3">
-                <a href="#" class="d-block p-4 border hover-unstyled hover-bg-primary">
+                <a href="javascript:;" class="d-block p-4 border hover-unstyled hover-bg-primary">
                   <div class="mb-4" style="min-height: 56px;">
-                    <img class="hover-fade-out" src="<%= process.env.IMAGE_PATH %>icon/about-icon-5.svg" alt="">
+                    <img loading="lazy" class="hover-hide" src="<%= process.env.IMAGE_PATH %>icon/about-icon-5.svg" alt="">
                   </div>
                   <div class="hover-translate-up">
                     <p class="h5">战略目标</p>
                     <div class="border-top border-primary mx-auto my-3" style="width: 24px;"></div>
-                    <p class="small text-gray">Strategic objectives</p>
+                    <p class="small text-gray text-uppercase hover-hide mb-0" style="min-height: 42px;">Strategic objectives</p>
+                    <p class="small text-white hover-show mb-0" style="min-height: 42px;">成为中国装饰行业的领导者</p>
                   </div>
                 </a>
               </div>
               <div class="col-lg-3 col-md-6 py-3">
-                <a href="#" class="d-block p-4 border hover-unstyled hover-bg-primary">
+                <a href="javascript:;" class="d-block p-4 border hover-unstyled hover-bg-primary">
                   <div class="mb-4" style="min-height: 56px;">
-                    <img class="hover-fade-out" src="<%= process.env.IMAGE_PATH %>icon/about-icon-6.svg" alt="">
+                    <img loading="lazy" class="hover-hide" src="<%= process.env.IMAGE_PATH %>icon/about-icon-6.svg" alt="">
                   </div>
                   <div class="hover-translate-up">
                     <p class="h5">经营理念</p>
                     <div class="border-top border-primary mx-auto my-3" style="width: 24px;"></div>
-                    <p class="small text-gray">Business philosophy</p>
+                    <p class="small text-gray text-uppercase hover-hide mb-0" style="min-height: 42px;">Business philosophy</p>
+                    <p class="small text-white hover-show mb-0" style="min-height: 42px;">以服务求生存，以质量求发展</p>
                   </div>
                 </a>
               </div>
               <div class="col-lg-3 col-md-6 py-3">
-                <a href="#" class="d-block p-4 border hover-unstyled hover-bg-primary">
+                <a href="javascript:;" class="d-block p-4 border hover-unstyled hover-bg-primary">
                   <div class="mb-4" style="min-height: 56px;">
-                    <img class="hover-fade-out" src="<%= process.env.IMAGE_PATH %>icon/about-icon-7.svg" alt="">
+                    <img loading="lazy" class="hover-hide" src="<%= process.env.IMAGE_PATH %>icon/about-icon-7.svg" alt="">
                   </div>
                   <div class="hover-translate-up">
                     <p class="h5">人才理念</p>
                     <div class="border-top border-primary mx-auto my-3" style="width: 24px;"></div>
-                    <p class="small text-gray">ruijian Talent Concept</p>
+                    <p class="small text-gray text-uppercase hover-hide mb-0" style="min-height: 42px;">ruijian Talent Concept</p>
+                    <p class="small text-white hover-show mb-0" style="min-height: 42px;">唯才是用 唯德重用</p>
                   </div>
                 </a>
               </div>
               <div class="col-lg-3 col-md-6 py-3">
-                <a href="#" class="d-block p-4 border hover-unstyled hover-bg-primary">
+                <a href="javascript:;" class="d-block p-4 border hover-unstyled hover-bg-primary">
                   <div class="mb-4" style="min-height: 56px;">
-                    <img class="hover-fade-out" src="<%= process.env.IMAGE_PATH %>icon/about-icon-8.svg" alt="">
+                    <img loading="lazy" class="hover-hide" src="<%= process.env.IMAGE_PATH %>icon/about-icon-8.svg" alt="">
                   </div>
                   <div class="hover-translate-up">
                     <p class="h5">宣传口号</p>
                     <div class="border-top border-primary mx-auto my-3" style="width: 24px;"></div>
-                    <p class="small text-gray">ruijain promote slogan</p>
+                    <p class="small text-gray text-uppercase hover-hide mb-0" style="min-height: 42px;">ruijain promote slogan</p>
+                    <p class="small text-white hover-show mb-0" style="min-height: 42px;">以世界品质，开启瑞意人生=</p>
                   </div>
                 </a>
               </div>
             </div>
           </div>
-          <div class="tab-pane fade" id="about-nav-4" role="tabpanel" aria-labelledby="about-nav-4-tab">
+        </div>
+        <div class="tab-pane fade" id="about-nav-4" role="tabpanel" aria-labelledby="about-nav-4-tab">
+          <div class="container py-lg-4">
             <div class="text-center">
-              <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-2.svg" alt="">
+              <img loading="lazy" class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-2.svg" alt="">
             </div>
           </div>
-          <div class="tab-pane fade" id="about-nav-5" role="tabpanel" aria-labelledby="about-nav-5-tab">
-            <nav aria-label="breadcrumb">
+        </div>
+        <div class="tab-pane fade" id="about-nav-5" role="tabpanel" aria-labelledby="about-nav-5-tab">
+          <div class="container py-lg-4">
+            <nav aria-label="breadcrumb" class="small">
               <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">首页</a></li>
-                <li class="breadcrumb-item"><a href="#">瑞建简介</a></li>
+                <li class="breadcrumb-item"><a href="javascript:;">首页</a></li>
+                <li class="breadcrumb-item"><a href="javascript:;">瑞建简介</a></li>
                 <li class="breadcrumb-item active" aria-current="page">荣誉资质</li>
               </ol>
             </nav>
-            <hr class="mb-5"/>
-            <p class="text-muted mb-5 small">公司通过ISO9001、ISO014001、GB/T28001体系认证。现任中国建筑装饰协会会员、广东省装饰协会会员、深圳市装饰行业协会会员单位、“全国建筑装饰行业AAA级信用企业”、“广东省装饰行业知名品牌”、“广东省守合同重信用企业”。
-公司成立至今，曾获得“广东省装饰行业十大优质工程奖”、“2016年广东省装饰行业优质工程奖”、“2016年广东杰出设计机构奖”、“广东省装饰行业知名品牌奖”。</p>
+            <hr class="mb-4 mt-2"/>
+            <p class="text-muted mb-5 small">公司通过ISO9001、ISO014001、GB/T28001体系认证。现任中国建筑装饰协会会员、广东省装饰协会会员、深圳市装饰行业协会会员单位、“全国建筑装饰行业AAA级信用企业”、“广东省装饰行业知名品牌”、“广东省守合同重信用企业”。公司成立至今，曾获得“广东省装饰行业十大优质工程奖”、“2016年广东省装饰行业优质工程奖”、“2016年广东杰出设计机构奖”、“广东省装饰行业知名品牌奖”。</p>
             <h4 class="text-center">我们的荣誉</h4>
             <div class="border-top border-primary mx-auto mb-5" style="width:32px;"></div>
             <div class="row text-center mb-5">
               <div class="col-lg-3 col-md-6 py-3">
-                <div class="mb-3" style="min-height: 226px;">
-                  <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-11.png" alt="">
+                <div class="mb-3" style="min-height: 226px;box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);">
+                  <img loading="lazy" class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-11.png" alt="">
                 </div>
                 <p class="small">广东省装饰行业知名品牌</p>
               </div>
               <div class="col-lg-3 col-md-6 py-3">
-                <div class="mb-3" style="min-height: 226px;">
-                  <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-12.png" alt="">
+                <div class="mb-3" style="min-height: 226px;box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);">
+                  <img loading="lazy" class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-12.png" alt="">
                 </div>
                 <p class="small">广东省装饰行业知名品牌</p>
               </div>
               <div class="col-lg-3 col-md-6 py-3">
-                <div class="mb-3" style="min-height: 226px;">
-                  <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-3.png" alt="">
+                <div class="mb-3" style="min-height: 226px;box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);">
+                  <img loading="lazy" class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-3.png" alt="">
                 </div>
                 <p class="small">广东省装饰行业知名品牌</p>
               </div>
               <div class="col-lg-3 col-md-6 py-3">
-                <div class="mb-3" style="min-height: 226px;">
-                  <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-4.png" alt="">
+                <div class="mb-3" style="min-height: 226px;box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);">
+                  <img loading="lazy" class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-4.png" alt="">
                 </div>
                 <p class="small">广东省装饰行业知名品牌</p>
               </div>
               <div class="col-lg-3 col-md-6 py-3">
-                <div class="mb-3" style="min-height: 226px;">
-                  <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-5.png" alt="">
+                <div class="mb-3" style="min-height: 226px;box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);">
+                  <img loading="lazy" class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-5.png" alt="">
                 </div>
                 <p class="small">广东省装饰行业知名品牌</p>
               </div>
               <div class="col-lg-3 col-md-6 py-3">
-                <div class="mb-3" style="min-height: 226px;">
-                  <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-6.png" alt="">
+                <div class="mb-3" style="min-height: 226px;box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);">
+                  <img loading="lazy" class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-6.png" alt="">
                 </div>
                 <p class="small">广东省装饰行业知名品牌</p>
               </div>
               <div class="col-lg-3 col-md-6 py-3">
-                <div class="mb-3" style="min-height: 226px;">
-                  <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-7.png" alt="">
+                <div class="mb-3" style="min-height: 226px;box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);">
+                  <img loading="lazy" class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-7.png" alt="">
                 </div>
                 <p class="small">广东省装饰行业知名品牌</p>
               </div>
               <div class="col-lg-3 col-md-6 py-3">
-                <div class="mb-3" style="min-height: 226px;">
-                  <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-8.png" alt="">
+                <div class="mb-3" style="min-height: 226px;box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);">
+                  <img loading="lazy" class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-8.png" alt="">
                 </div>
                 <p class="small">广东省装饰行业知名品牌</p>
               </div>
             </div>
-            <div class="row no-gutters mb-5">
-              <div class="col-lg-10">
-                <div id="slick-banner">
+            <div class="row align-items-center mb-5">
+              <div class="col-lg-6 py-3">
+                <div id="slick-honor-banner">
                   <div>
-                    <div style="background-image: url(<%= process.env.IMAGE_PATH %>images/about-image-13.png);background-size:auto 100%;background-repeat: no-repeat;background-position:center;"></div>
+                    <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-13.png" alt="">
                   </div>
                   <div>
-                    <div style="background-image: url(<%= process.env.IMAGE_PATH %>images/about-image-13.png);background-size:auto 100%;background-repeat: no-repeat;background-position:center;"></div>
+                    <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-13.png" alt="">
                   </div>
                   <div>
-                    <div style="background-image: url(<%= process.env.IMAGE_PATH %>images/about-image-13.png);background-size:auto 100%;background-repeat: no-repeat;background-position:center;"></div>
+                    <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-13.png" alt="">
                   </div>
                   <div>
-                    <div style="background-image: url(<%= process.env.IMAGE_PATH %>images/about-image-13.png);background-size:auto 100%;background-repeat: no-repeat;background-position:center;"></div>
+                    <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/about-image-13.png" alt="">
                   </div>
                 </div>
               </div>
-              <div class="col-lg-2 d-none d-lg-block">
-                <div id="slick-nav">
-                  <div style="background-image:url(<%= process.env.IMAGE_PATH %>images/about-image-3.png);background-size:100%;background-repeat: no-repeat;height: 130px;">
+              <div class="col-lg-6 py-3">
+                <div class="row small">
+                  <div class="col-lg-5">
+                    <ul>
+                      <li class="font-weight-light pb-3 mb-3" style="border-bottom: 1px dashed #D1D1D1;">建筑装饰工程设计专项甲级</li>
+                      <li class="font-weight-light pb-3 mb-3" style="border-bottom: 1px dashed #D1D1D1;">建筑装修装饰工程专业承包壹级</li>
+                      <li class="font-weight-light pb-3 mb-3" style="border-bottom: 1px dashed #D1D1D1;">消防设施工程专业承包壹级</li>
+                      <li class="font-weight-light pb-3 mb-3" style="border-bottom: 1px dashed #D1D1D1;">钢结构工程专业承包壹级</li>
+                      <li class="font-weight-light pb-3 mb-3" style="border-bottom: 1px dashed #D1D1D1;">展陈工程设计与施工一体化壹级</li>
+                      <li class="font-weight-light pb-3 mb-3" style="border-bottom: 1px dashed #D1D1D1;">建筑幕墙工程专业承包贰级</li>
+                      <li class="font-weight-light pb-3 mb-3" style="border-bottom: 1px dashed #D1D1D1;">建筑工程施工总承包叄级</li>
+                      <li class="font-weight-light pb-3 mb-3" style="border-bottom: 1px dashed #D1D1D1;">机电工程施工总承包叄级</li>
+                      <li class="font-weight-light pb-3 mb-3" style="border-bottom: 1px dashed #D1D1D1;">市政公用工程施工总承包叄级</li>
+                    </ul>
                   </div>
-                  <div style="background-image:url(<%= process.env.IMAGE_PATH %>images/about-image-4.png);background-size:100%;background-repeat: no-repeat;height: 130px;">
-                  </div>
-                  <div style="background-image:url(<%= process.env.IMAGE_PATH %>images/about-image-5.png);background-size:100%;background-repeat: no-repeat;height: 130px;">
-                  </div>
-                  <div style="background-image:url(<%= process.env.IMAGE_PATH %>images/about-image-6.png);background-size:100%;background-repeat: no-repeat;height: 130px;">
+                  <div class="col-lg-5 offset-lg-1">
+                    <ul>
+                      <li class="font-weight-light pb-3 mb-3" style="border-bottom: 1px dashed #D1D1D1;">建筑工程施工总承包叄级</li>
+                      <li class="font-weight-light pb-3 mb-3" style="border-bottom: 1px dashed #D1D1D1;">机电工程施工总承包叄级</li>
+                      <li class="font-weight-light pb-3 mb-3" style="border-bottom: 1px dashed #D1D1D1;">市政公用工程施工总承包叄级</li>
+                      <li class="font-weight-light pb-3 mb-3" style="border-bottom: 1px dashed #D1D1D1;">施工劳务不分等级</li>
+                      <li class="font-weight-light pb-3 mb-3" style="border-bottom: 1px dashed #D1D1D1;">城市园林绿化不分等级</li>
+                      <li class="font-weight-light pb-3 mb-3" style="border-bottom: 1px dashed #D1D1D1;">建筑幕墙工程专业承包贰级</li>
+                      <li class="font-weight-light pb-3 mb-3" style="border-bottom: 1px dashed #D1D1D1;">建筑工程施工总承包叄级</li>
+                      <li class="font-weight-light pb-3 mb-3" style="border-bottom: 1px dashed #D1D1D1;">机电工程施工总承包叄级</li>
+                      <li class="font-weight-light pb-3 mb-3" style="border-bottom: 1px dashed #D1D1D1;">市政公用工程施工总承包叄级</li>
+                    </ul>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="row pt-5">
-              <div class="col-lg-5">
-                <ul>
-                  <li class="h5 font-weight-light pb-3 mb-3" style="border-bottom: 1px dashed #D1D1D1;">建筑装饰工程设计专项甲级</li>
-                  <li class="h5 font-weight-light pb-3 mb-3" style="border-bottom: 1px dashed #D1D1D1;">建筑装修装饰工程专业承包壹级</li>
-                  <li class="h5 font-weight-light pb-3 mb-3" style="border-bottom: 1px dashed #D1D1D1;">消防设施工程专业承包壹级</li>
-                  <li class="h5 font-weight-light pb-3 mb-3" style="border-bottom: 1px dashed #D1D1D1;">钢结构工程专业承包壹级</li>
-                  <li class="h5 font-weight-light pb-3 mb-3" style="border-bottom: 1px dashed #D1D1D1;">展陈工程设计与施工一体化壹级</li>
-                  <li class="h5 font-weight-light pb-3 mb-3" style="border-bottom: 1px dashed #D1D1D1;">建筑幕墙工程专业承包贰级</li>
-                </ul>
-              </div>
-              <div class="col-lg-5 offset-lg-1">
-                <ul>
-                  <li class="h5 font-weight-light pb-3 mb-3" style="border-bottom: 1px dashed #D1D1D1;">建筑工程施工总承包叄级</li>
-                  <li class="h5 font-weight-light pb-3 mb-3" style="border-bottom: 1px dashed #D1D1D1;">机电工程施工总承包叄级</li>
-                  <li class="h5 font-weight-light pb-3 mb-3" style="border-bottom: 1px dashed #D1D1D1;">市政公用工程施工总承包叄级</li>
-                  <li class="h5 font-weight-light pb-3 mb-3" style="border-bottom: 1px dashed #D1D1D1;">施工劳务不分等级</li>
-                  <li class="h5 font-weight-light pb-3 mb-3" style="border-bottom: 1px dashed #D1D1D1;">城市园林绿化不分等级</li>
-                  <li class="h5 font-weight-light pb-3 mb-3" style="border-bottom: 1px dashed #D1D1D1;">通过ISO9001/ISO14001/OHSAS18001认证管理体系</li>
-                </ul>
               </div>
             </div>
           </div>
@@ -356,28 +390,12 @@ var slick_about_honor_true = false
 $('#about-nav-5-tab').on('shown.bs.tab', function (e) {
   if(!slick_about_honor_true){
     slick_about_honor_true = true
-    $('#slick-banner').slick({
-      prevArrow: '<button type="button" class="slick-prev"><img src="<%= process.env.IMAGE_PATH %>icon/slick-left.svg"/></button>',
-      nextArrow: '<button type="button" class="slick-next"><img src="<%= process.env.IMAGE_PATH %>icon/slick-right.svg"/></button>',
+    $('#slick-honor-banner').slick({
+      prevArrow: '<button type="button" class="slick-prev"><img loading="lazy" src="<%= process.env.IMAGE_PATH %>icon/slick-left.svg"/></button>',
+      nextArrow: '<button type="button" class="slick-next"><img loading="lazy" src="<%= process.env.IMAGE_PATH %>icon/slick-right.svg"/></button>',
       fade: true,
       autoplay: true,
-      asNavFor: '#slick-nav',
-      responsive: [
-        {
-          breakpoint: 992,
-          settings: {
-            dots: true,
-          }
-        }
-      ]
-    })
-    $('#slick-nav').slick({
-      vertical: true,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      asNavFor: '#slick-banner',
-      focusOnSelect: true,
-      arrows: false
+      dots: true
     })
   }
 })

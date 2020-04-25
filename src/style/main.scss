@@ -160,15 +160,31 @@ a:hover {
 .hover-fade-out {
   transition: all 0.4s;
 }
+.hover-fade-in {
+  opacity: 0;
+  transition: all 0.4s;
+}
+.hover-show {
+  display: none;
+}
 a:hover {
   .hover-fade-out {
     opacity: 0;
+  }
+  .hover-fade-in{
+    opacity: 1;
+  }
+  .hover-show {
+    display: block;
+  }
+  .hover-hide {
+    display: none;
   }
 }
 .hover-bg-primary {
   transition: all 0.4s;
   &:hover {
-    background-color: $primary;
+    background-color: $primary !important;
     color: #fff;
   }
 }
@@ -179,7 +195,30 @@ a:hover {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
-
+.position-lg-absolute {
+  position: static;
+  @media(min-width: 992px){
+    position: absolute;
+  }
+}
+small, .small {
+  font-size: 14px;
+}
+tiny, .tiny {
+  font-size: 12px;
+}
+.bannerHeight {
+  height: 150px;
+  @media(min-width: 992px){
+    height: 272px;
+  }
+}
+body {
+  padding-top: 45px;
+  @media(min-width: 992px) {
+    padding-top: 0;
+  }
+}
 .navbar {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
   background-color: #fff;
@@ -213,6 +252,7 @@ a:hover {
     top: 5px;
     .navbar-toggler-icon {
       background-image: url('../../public/icon/menu.svg');
+      background-size: 1.2rem;
     }
     &[aria-expanded="true"] {
       position: fixed;
@@ -230,6 +270,7 @@ a:hover {
       }
       .navbar-toggler-icon {
         background-image: url('../../public/icon/close.svg');
+        background-size: 1.4rem;
       }
     }
   }
@@ -316,9 +357,10 @@ a:hover {
           vertical-align: 0em;
           border: none;
           background-image: url('../../public/icon/add.svg');
-          width:24px;
-          height: 24px;
-          transform: translateY(-12px);
+          width:14px;
+          height: 14px;
+          background-size: contain;
+          transform: translateY(-6px);
           @media(min-width: 992px){
             right: -12px;
             background-image: url('../../public/icon/dropdown.svg');
@@ -329,7 +371,7 @@ a:hover {
         }
         &[aria-expanded="true"] {
           &::after {
-            width: 24px;
+            width: 14px;
             height: 1px;
             transform: translateY(0px);
             background-image: url('../../public/icon/mini.svg');
@@ -396,14 +438,23 @@ a:hover {
 #case-nav-tab {
   border: none;
   .nav-link {
-    min-width: 100px;
+    min-width: 86px;
     border: none;
     border-right: 1px solid #D8D8D8;
     padding: 0 16px;
     margin: 10px 0;
+    font-size: .875rem;
+    color: $gray;
     @media(min-width: 992px){
       min-width: 0;
       padding: 0 30px;
+      &:last-child {
+        border: none;
+        padding-right: 0;
+      }
+    }
+    &:hover {
+      color: $secondary;
     }
     &.active {
       border: none;
@@ -414,10 +465,6 @@ a:hover {
           border-bottom: solid 2px $secondary;
           padding: 6px 0;
       }
-    }
-    &:last-child {
-      border: none;
-      padding-right: 0;
     }
   }
 }
@@ -456,6 +503,12 @@ a:hover {
     &:last-child {
       padding-right: 0;
       border-right: none;
+    }
+    &:nth-child(3) {
+      border-right: none;
+      @media(min-width: 992px) {
+        border-right: 1px solid #767676;
+      }
     }
   }
 }
@@ -507,7 +560,7 @@ a:hover {
     }
   }
 }
-#slick-banner {
+#slick-case-banner {
   height: 50vh;
   @media(min-width: 992px){
     height: 100%;
@@ -519,7 +572,7 @@ a:hover {
     }
   }
 }
-#slick-nav {
+#slick-case-nav {
   .slick-track {
     padding: 0 1rem;
   }
@@ -550,27 +603,35 @@ a:hover {
     color: #737373;
     flex: 1 1 auto;
     text-align: center;
-    margin: 14px 0;
+    margin: 1.25rem 0;
+    padding: 0 1rem;
+    font-size: .875rem;
+    border-right: 1px solid #BDBDBD;
     &.active {
       color: $secondary;
       position: relative;
       border-color: transparent;
+      border-right: 1px solid #BDBDBD;
       &::before {
         content: '';
         position: absolute;
         width: 100%;
         height: 2px;
         background-color: $secondary;
-        bottom: -14px;
+        bottom: -1.3rem;
         left: 0;
       }
     }
     &:hover {
       color: $secondary;
       border-color: transparent;
+      border-right: 1px solid #BDBDBD;
     }
     &:focus {
       border-color: transparent;
+    }
+    &:last-child {
+      border-right: none;
     }
   }
 }
@@ -660,7 +721,7 @@ a:hover {
 }
 ul.join-us-list {
   li {
-    padding: 0rem 1rem;
+    padding: 0rem 1.5rem;
     margin: 0.5rem 0;
     border-right: 1px solid #E8E8E8;
     &:first-child {

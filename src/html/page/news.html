@@ -7,10 +7,12 @@
   </head>
   <body>
     <%= require('html-loader!../common/header.ejs') %>
-    <section class="py-5" style="background: url(<%= process.env.IMAGE_PATH %>images/news-banner-1.png) top no-repeat;">
-      <div class="container py-lg-5">
-        <img class="img-fluid mb-5" src="<%= process.env.IMAGE_PATH %>images/news-banner-2.svg" alt="">
-        <p class="text-gray small">Photo of the Day by Max Kolganov</p>
+    <section class="bannerHeight" style="background: url(<%= process.env.IMAGE_PATH %>images/news-banner-1.png) top no-repeat;">
+      <div class="container h-100 d-flex align-items-center">
+        <div>
+          <img loading="lazy" class="img-fluid mb-4" src="<%= process.env.IMAGE_PATH %>images/news-banner-2.svg" alt="">
+          <p class="text-gray small">Photo of the Day by Max Kolganov</p>
+        </div>
       </div>
     </section>
     <section class="py-5">
@@ -27,8 +29,8 @@
             <hr class="mb-0 mt-3"/>
             <a href="/news-detail.html" class="d-flex flex-column flex-lg-row border-bottom py-5 hover-unstyled">
               <div>
-                <p class="h3 mb-4 text-gray text-nowrap" style="line-height:16px;">10-19</p>
-                <i class="icon d-none d-lg-inline-block"></i>
+                <p class="h3 mb-lg-4 text-gray text-nowrap" style="line-height:16px;">10-19</p>
+                <i class="icon d-inline-block ml-n2 ml-lg-0"></i>
               </div>
               <div class="border-bottom mx-4 pt-2 line d-none d-lg-block"></div>
               <div class="pr-lg-5 content">
@@ -36,13 +38,13 @@
                 <p class="text-muted small mb-0" style="line-height: 28px;">经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研究，集体讨论。经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研究，集体讨论。经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。</p>
               </div>
               <div>
-                <img src="<%= process.env.IMAGE_PATH %>images/news-image-1.png" alt="">
+                <img loading="lazy" src="<%= process.env.IMAGE_PATH %>images/news-image-1.png" alt="">
               </div>
             </a>
             <a href="/news-detail.html" class="d-flex flex-column flex-lg-row border-bottom py-5 hover-unstyled">
               <div>
-                <p class="h3 mb-4 text-gray text-nowrap" style="line-height:16px;">10-19</p>
-                <i class="icon d-none d-lg-inline-block"></i>
+                <p class="h3 mb-lg-4 text-gray text-nowrap" style="line-height:16px;">10-19</p>
+                <i class="icon d-inline-block ml-n2 ml-lg-0"></i>
               </div>
               <div class="border-bottom mx-4 pt-2 line d-none d-lg-block"></div>
               <div class="pr-lg-5 content">
@@ -50,7 +52,7 @@
                 <p class="text-muted small mb-0" style="line-height: 28px;">经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研究，集体讨论。经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研究，集体讨论。经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。</p>
               </div>
               <div>
-                <img src="<%= process.env.IMAGE_PATH %>images/news-image-1.png" alt="">
+                <img loading="lazy" src="<%= process.env.IMAGE_PATH %>images/news-image-1.png" alt="">
               </div>
             </a>
           </div>
@@ -58,8 +60,8 @@
             <hr class="mb-0 mt-3"/>
             <a href="/news-detail.html" class="d-flex flex-column flex-lg-row border-bottom py-5 hover-unstyled">
               <div>
-                <p class="h3 mb-4 text-gray text-nowrap" style="line-height:16px;">10-19</p>
-                <i class="icon d-none d-lg-inline-block"></i>
+                <p class="h3 mb-lg-4 text-gray text-nowrap" style="line-height:16px;">10-19</p>
+                <i class="icon d-inline-block ml-n2 ml-lg-0"></i>
               </div>
               <div class="border-bottom mx-4 pt-2 line d-none d-lg-block"></div>
               <div class="pr-lg-5 content">
@@ -67,13 +69,13 @@
                 <p class="text-muted small mb-0" style="line-height: 28px;">经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研究，集体讨论。经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研究，集体讨论。经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。</p>
               </div>
               <div>
-                <img src="<%= process.env.IMAGE_PATH %>images/news-image-1.png" alt="">
+                <img loading="lazy" src="<%= process.env.IMAGE_PATH %>images/news-image-1.png" alt="">
               </div>
             </a>
             <a href="/news-detail.html" class="d-flex flex-column flex-lg-row border-bottom py-5 hover-unstyled">
               <div>
-                <p class="h3 mb-4 text-gray text-nowrap" style="line-height:16px;">10-19</p>
-                <i class="icon d-none d-lg-inline-block"></i>
+                <p class="h3 mb-lg-4 text-gray text-nowrap" style="line-height:16px;">10-19</p>
+                <i class="icon d-inline-block ml-n2 ml-lg-0"></i>
               </div>
               <div class="border-bottom mx-4 pt-2 line d-none d-lg-block"></div>
               <div class="pr-lg-5 content">
@@ -81,58 +83,13 @@
                 <p class="text-muted small mb-0" style="line-height: 28px;">经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研究，集体讨论。经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研究，集体讨论。经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。</p>
               </div>
               <div>
-                <img src="<%= process.env.IMAGE_PATH %>images/news-image-1.png" alt="">
+                <img loading="lazy" src="<%= process.env.IMAGE_PATH %>images/news-image-1.png" alt="">
               </div>
             </a>
           </div>
           <div class="tab-pane fade" id="home-about-nav-3" role="tabpanel" aria-labelledby="home-about-nav-3-tab">
             <div id="news">
-              <div class="row">
-                <div class="col-lg-3 col-md-6 py-3">
-                  <a href="/news-detail.html">
-                    <p class="h4">07-28</p>
-                    <div class="hover-progress-line"></div>
-                    <p>专访：建筑作为一种呈现的媒介</p>
-                    <p class="small text-muted mb-4 ellipsis" style="line-height: 26px;min-height: 78px;">经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研套室内设计究，集体讨论。</p>
-                    <div class="hover-image-box">
-                      <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/home-image-10.png" alt="">
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-3 col-md-6 py-3">
-                  <a href="/news-detail.html">
-                    <p class="h4">09-16</p>
-                    <div class="hover-progress-line"></div>
-                    <p>“环保简便”引领办公室装修新走向</p>
-                    <p class="small text-muted mb-4 ellipsis" style="line-height: 26px;min-height: 78px;">经过多年的研究与调查，从今年的6月开工设计至今，</p>
-                    <div class="hover-image-box">
-                      <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/home-image-11.png" alt="">
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-3 col-md-6 py-3">
-                  <a href="/news-detail.html">
-                    <p class="h4">11-26</p>
-                    <div class="hover-progress-line"></div>
-                    <p>“营改增”对建筑施工企业的影响</p>
-                    <p class="small text-muted mb-4 ellipsis" style="line-height: 26px;min-height: 78px;">经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研套室内设计究，集体讨论。勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研套室内设计究，集体讨论。</p>
-                    <div class="hover-image-box">
-                      <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/home-image-12.png" alt="">
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-3 col-md-6 py-3">
-                  <a href="/news-detail.html">
-                    <p class="h4">12-27</p>
-                    <div class="hover-progress-line"></div>
-                    <p>热烈祝贺瑞建升级为集团公司</p>
-                    <p class="small text-muted mb-4 ellipsis" style="line-height: 26px;min-height: 78px;">经过多年的研究与调查，从今年的6月开工设计至今，勤劳的设计精英们已完成五十余套室内设计。每一套设计我们都细心研套室内设计究，集体讨论。</p>
-                    <div class="hover-image-box">
-                      <img class="img-fluid" src="<%= process.env.IMAGE_PATH %>images/home-image-13.png" alt="">
-                    </div>
-                  </a>
-                </div>
-              </div>
+              <%= require('html-loader!../common/content-news.ejs') %>
             </div>
           </div>
         </div>

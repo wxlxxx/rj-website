@@ -7,7 +7,7 @@
   </head>
   <body>
     <%= require('html-loader!../common/header.ejs') %>
-    <section style="background:url(<%= process.env.IMAGE_PATH %>images/join-us-banner.png) center no-repeat;height: 500px;max-height: 60vh;background-size: cover;">
+    <section class="bannerHeight" style="background:url(<%= process.env.IMAGE_PATH %>images/join-us-banner.png) center no-repeat;background-size: cover;">
     </section>
     <section class="py-5">
       <div class="container">
@@ -27,30 +27,30 @@
         <div class="row mb-5">
           <div class="col-md-6 py-3">
             <div class="d-flex mb-4">
-              <img src="<%= process.env.IMAGE_PATH %>icon/document.svg" alt="">
+              <img loading="lazy" src="<%= process.env.IMAGE_PATH %>icon/document.svg" alt="">
               <p class="pl-3 mb-0">职位描述</p>
             </div>
             <p class="small">岗位职责:</p>
             <ul class="list-unstyled text-gray small">
-              <li>1、负责业务数据分析平台建设，设计有效的数据指标体系，支持业务日常运营和分析；</li>
-              <li>2、监控业务运营指标，发现潜在风险，发掘潜在机会，为运营决策、业务流程优化提供支持；</li>
-              <li>3、根据实际业务情况，对数据进行建模和挖掘，与运营部门一起建立并持续完善数据分析模型；</li>
-              <li>4、参与数据清洗和过滤、数据处理、数据分析可视化等过程的研发。</li>
-              <li>5、监控业务运营指标，发现潜在风险，发掘潜在机会，为运营决策、业务流程优化提供支持；</li>
+              <li class="mb-2">1、负责业务数据分析平台建设，设计有效的数据指标体系，支持业务日常运营和分析；</li>
+              <li class="mb-2">2、监控业务运营指标，发现潜在风险，发掘潜在机会，为运营决策、业务流程优化提供支持；</li>
+              <li class="mb-2">3、根据实际业务情况，对数据进行建模和挖掘，与运营部门一起建立并持续完善数据分析模型；</li>
+              <li class="mb-2">4、参与数据清洗和过滤、数据处理、数据分析可视化等过程的研发。</li>
+              <li class="mb-2">5、监控业务运营指标，发现潜在风险，发掘潜在机会，为运营决策、业务流程优化提供支持；</li>
             </ul>
           </div>
           <div class="col-md-6 py-3">
             <div class="d-flex mb-4">
-              <img src="<%= process.env.IMAGE_PATH %>icon/document.svg" alt="">
+              <img loading="lazy" src="<%= process.env.IMAGE_PATH %>icon/document.svg" alt="">
               <p class="pl-3 mb-0">职位要求</p>
             </div>
             <p class="small">职位要求:</p>
             <ul class="list-unstyled text-gray small">
-              <li>1、室内设计相关专业大专以上学历；</li>
-              <li>2、熟练使用AUTOCAD，Photoshop。能快速准确绘制平、立面图及节点大样图；</li>
-              <li>3、两年以上相关工作经验，需跟过大型酒店装饰专案；</li>
-              <li>4、工作勤奋、踏实、有较强的团队合作精神和服务意识；</li>
-              <li>5、此职位有机会到方案部工作，需能适应出差。</li>
+              <li class="mb-2">1、室内设计相关专业大专以上学历；</li>
+              <li class="mb-2">2、熟练使用AUTOCAD，Photoshop。能快速准确绘制平、立面图及节点大样图；</li>
+              <li class="mb-2">3、两年以上相关工作经验，需跟过大型酒店装饰专案；</li>
+              <li class="mb-2">4、工作勤奋、踏实、有较强的团队合作精神和服务意识；</li>
+              <li class="mb-2">5、此职位有机会到方案部工作，需能适应出差。</li>
             </ul>
           </div>
         </div>
