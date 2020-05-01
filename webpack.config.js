@@ -156,7 +156,7 @@ const prodConfig = {
   ].concat(htmlPlugins),
   optimization: {
     splitChunks: {
-      chunks: 'all'
+      chunks: 'async'
     }
   }
 }
