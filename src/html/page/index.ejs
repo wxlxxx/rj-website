@@ -201,7 +201,7 @@
       </div>
     </section>
     <section class="py-5 bg-gray text-center">
-      <div class="container" style="max-width: 960px;">
+      <div class="container py-lg-5" style="max-width: 960px;">
         <div class="bg-white p-5">
           <h4>联系我们</h4>
           <p class="text-gray mb-5">contact us</p>
@@ -224,15 +224,14 @@
     autoplaySpeed: 5000
   })
   $('#slick-home-service').slick({
-    prevArrow: '<button type="button" class="slick-prev" style="background:url(<%= process.env.IMAGE_PATH %>icon/arrows-left.svg) center no-repeat;left:-40px;"></button>',
-    nextArrow: '<button type="button" class="slick-next" style="background:url(<%= process.env.IMAGE_PATH %>icon/arrows-right.svg)center no-repeat;right:-40px;"></button>',
     autoplay: true,
     slidesToShow: 4,
+    dots: true,
+    arrows: false,
     responsive: [
       {
         breakpoint: 992,
         settings: {
-          dots: true,
           arrows: false,
           slidesToShow: 1
         }
