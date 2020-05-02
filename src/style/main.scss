@@ -144,7 +144,8 @@ html {
   background-size: auto 100%;
   transition: all 0.4s;
 }
-a:hover {
+a:hover,
+.hover-trigger-content:hover {
   .background-image-cover {
     background-size: auto 120%;
   }
@@ -152,7 +153,8 @@ a:hover {
 .hover-translate-up {
   transition: all 0.4s;
 }
-a:hover {
+a:hover,
+.hover-trigger-content:hover {
   .hover-translate-up {
     transform: translateY(-10px);
   }
@@ -167,7 +169,8 @@ a:hover {
 .hover-show {
   display: none;
 }
-a:hover {
+a:hover,
+.hover-trigger-content:hover {
   .hover-fade-out {
     opacity: 0;
   }
