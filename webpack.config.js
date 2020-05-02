@@ -101,7 +101,7 @@ const prodConfig = {
             options: {
               // you can specify a publicPath here
               // by default it uses publicPath in webpackOptions.output
-              publicPath: './css/',
+              publicPath: process.env.PUBLIC_PATH || '/',
               hmr: process.env.NODE_ENV === 'development',
             },
           },
@@ -136,7 +136,13 @@ const prodConfig = {
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
         use: [
-          'file-loader',
+          {
+            loader: 'file-loader',
+            options: {
+              name:'assets/fonts/[name].[ext]',
+              limit:20000
+            }
+          }
         ]
       }
     ]

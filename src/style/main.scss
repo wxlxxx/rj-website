@@ -191,7 +191,8 @@ a:hover,
     color: #fff;
   }
 }
-.ellipsis {
+.ellipsis,
+.ellipsis p {
   overflow : hidden;
   text-overflow: ellipsis;
   display: -webkit-box;

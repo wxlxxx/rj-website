@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "IMAGE_PATH=/ webpack-dev-server --hot --mode=development",
-    "build": "PUBLIC_PATH=./ IMAGE_PATH=./ webpack --mode=production"
+    "build": "PUBLIC_PATH=/wp-content/themes/twentytwenty-child IMAGE_PATH=./ webpack --mode=production"
   },
   "repository": {
     "type": "git",
