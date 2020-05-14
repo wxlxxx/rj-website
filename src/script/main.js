@@ -6,17 +6,41 @@ import { CountUp } from 'countup.js';
 import { throttle, debounce } from 'throttle-debounce';
 import 'social-share.js/dist/js/social-share.min.js';
 
+const countups = null
+const toTop = document.querySelectorAll('.totop')[0] || null
 // countup
-(function myCountUp(){
-  const countups = document.querySelectorAll('.countup')
+(function(){
+  countups = document.querySelectorAll('.countup')
   if(countups.length > 0){
     countups.forEach(element => {
       element.countUp = new CountUp(element, element.innerText)
     })
-    if(window._scrollHandle){
-      return
+  }
+})();
+
+(function(){
+  if(!toTop || toTop._clickHandle){
+    return
+  }
+  toTop._clickHandle = () => {
+    const scrollToTop = () => {
+        let sTop = document.documentElement.scrollTop || document.body.scrollTop
+        if (sTop > 0) {
+            window.requestAnimationFrame(scrollToTop)
+            window.scrollTo(0, sTop - sTop / 8)
+        }
     }
-    window._scrollHandle = () => {
+    scrollToTop()
+  }
+  toTop.addEventListener('click', toTop._clickHandle)
+})();
+
+(function(){
+  if(window._scrollHandle){
+    return
+  }
+  window._scrollHandle = () => {
+    if(countups){
       countups.forEach(element => {
         const offset = element.getBoundingClientRect()
         const offsetTop = offset.top
@@ -29,15 +53,31 @@ import 'social-share.js/dist/js/social-share.min.js';
         }
       })
     }
-    window.addEventListener('scroll', throttle(500,window._scrollHandle))
+    if(toTop){
+      if(window.scrollY >= 150){
+        $(toTop).fadeIn()
+      }else {
+        $(toTop).fadeOut()
+      }
+    }
   }
+  window.addEventListener('scroll', throttle(500,window._scrollHandle))
 })();
 
-(function () {
+(function(){
   if($('[data-toggle="tab"]').length > 0){
     $(window.location.hash).tab('show')
     $(window).on('hashchange', function(){
       $(window.location.hash).tab('show')
+    })
+  }
+})();
+
+(function(){
+  if(window.location.hash.match('#wpcf7') != null){
+    $('#modal-submit-success').modal()
+    $('#modal-submit-success').on('hidden.bs.modal', function (e) {
+      window.location.replace(window.location.origin + window.location.pathname)
     })
   }
 })();
